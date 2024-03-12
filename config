@@ -1,0 +1,5 @@
+# dublang config (0.6.0-0)
+
+PLUGINS="git echo"
+
+# vim: ft=config
