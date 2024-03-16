@@ -31,7 +31,7 @@ schedule({
 })
 
 
-fudi([[onoff 1; vol 0.15; freq 440; delay 0; time 100;]])
+fudi([[onoff 1; vol 0.15; freq 340; delay 0; time 100;]])
 
 fudi([[onoff 0; vol 0.15; freq 440; delay 0; time 10;]])
 
