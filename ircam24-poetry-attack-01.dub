@@ -129,7 +129,7 @@ d2
 d3
   $ stack [
     sound "[bd*2, ~ jazz:7?]",
-    sound "hh*16"
+    sound "hh*16" # speed 1.5
   ]
   # shape 0.2
 
