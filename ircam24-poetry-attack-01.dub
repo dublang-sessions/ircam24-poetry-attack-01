@@ -57,6 +57,7 @@ d1
   # size 0.5
 
 d2
+  $ rarely (superimpose (chop 8))
   $ slow 6
   $ slowcat [
     sound "berimbau",
