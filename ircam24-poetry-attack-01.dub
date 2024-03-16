@@ -183,6 +183,8 @@ onoff 0;
 
 onoff 1; freq 440;
 
+onoff 1; freq 440; delay 1;
+
 onoff 1; freq 440; wave 1;
 
 onoff 1; freq 440; wave 2;
