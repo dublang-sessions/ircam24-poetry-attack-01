@@ -4,8 +4,6 @@ supercollider([[~dirt.loadSoundFiles("${config.path.sounds}/sounds-berimbau/*")]
 supercollider([[~dirt.loadSoundFiles("${config.path.sounds}/sounds-pandeiro/*")]])
 supercollider([[~dirt.loadSoundFiles("${config.path.sounds}/sounds-mocreo/*")]])
 
-return 'hello world'
-
 #!supercollider
 |repeat 10
 
@@ -19,7 +17,7 @@ return 'hello world'
     var lfof1 = min(basefreq*10*pitch1, 22000);
     var lfof2 = min(lfof1 * (lfo + 1), 22000);
     var sound = 0.5 * PulseDPW.ar(basefreq) * DelayC.ar(PulseDPW.ar(basefreq), 0.2, Line.kr(0,voice,sustain)/basefreq);
-    sound = 0.3 * PulseDPW.ar(basefreq2) * DelayC.ar(PulseDPW.ar(basefreq2), 0.2, Line.kr(0.1,0.1+voice,sustain)/basefreq) + sound;
+    sound = 0.2 * PulseDPW.ar(basefreq2) * DelayC.ar(PulseDPW.ar(basefreq2), 0.2, Line.kr(0.1,0.1+voice,sustain)/basefreq) + sound;
     sound = MoogFF.ar(sound, SinOsc.ar(basefreq/32*speed, 0).range(lfof1,lfof2), resonance*4);
     sound = MoogFF.ar(sound, min(env2*lfof2*1.1, 22000), 3);
     sound = sound.tanh*5;
@@ -72,3 +70,7 @@ d2
   # gain (slow 6 $ palindrome $ range 0.5 1 sine)
 
 d3 $ sound "bd"
+
+#!espeak
+
+test
