@@ -165,3 +165,29 @@ Numbers!!
 Numbers!!
 .
 Numbers!!
+
+#!fudi
+
+-- onoff: [0 "off", 1 "on"]
+-- freq: 0-2500
+-- delay: [0 "off", 1 "on"]
+-- time: 0-2000
+-- wave: [0 "tri", 1 "ramp", 2 "saw", 3 "sqr"]
+-- mod (freq modulation): 0-200
+-- vol: 0-1
+-- time: 0-2000
+
+onoff 1; vol 0.05
+
+onoff 0;
+
+onoff 1; freq 440;
+
+onoff 1; freq 440; wave 1;
+
+onoff 1; freq 440; wave 2;
+
+freq 2;
+
+onoff 1; freq 920; wave 0;
+
