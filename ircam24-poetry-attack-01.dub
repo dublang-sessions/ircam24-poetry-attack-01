@@ -183,7 +183,7 @@ onoff 0;
 
 onoff 1; freq 440;
 
-onoff 1; freq 440; delay 1; time 1000; mod 150;
+onoff 1; freq 440; delay 1; time 2000; mod 150;
 
 onoff 1; freq 440; wave 1;
 
