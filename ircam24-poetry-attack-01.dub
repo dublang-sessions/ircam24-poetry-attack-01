@@ -138,7 +138,7 @@ d4
   ]
   # sound "superpiano"
   # orbit 4 # size 0.4 # room 0.5
-  # pan (choose([0, 1]))
+  # pan "[0|1]"
 
 #!espeak
 
