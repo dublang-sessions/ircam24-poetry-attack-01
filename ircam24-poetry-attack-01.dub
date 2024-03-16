@@ -57,7 +57,7 @@ d1
   # size 0.5
 
 d2
-  $ rarely (superimpose ((# squiz 2) . (chop 8) . (|- gain 0.5)))
+  $ rarely (superimpose ((# squiz 2) . (chop 8) . (|- gain 0.25)))
   $ slow 8
   $ slowcat [
     sound "berimbau",
@@ -68,5 +68,6 @@ d2
   # n (irand 8)
   # lpf (slow 4 $ range 400 3000 sine)
   # speed 1 |+ speed (slow 2 $ sine * 0.5)
+  # gain (slow 6 $ palindrome $ range 0.5 1 sine)
 
 
