@@ -15,8 +15,7 @@ cycle({
   function()
     espeak([[are here?]])
   end,
-
-cycle({})
+})
 
 schedule({
   [1] = function()
@@ -53,24 +52,6 @@ schedule({
     fudi([[onoff 0;]])
   end,
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-onoff 1; freq 920; wave 0;
-
-
-shebang_
 
 
 #!supercollider
