@@ -129,7 +129,7 @@ d2
 d3 $ sound "bd"
 
 d4
-  $ gap 8
+  $ gap 2
   $ note (palindrome $ scale "chromatic"(run 8))
   # sound "superpiano"
 
