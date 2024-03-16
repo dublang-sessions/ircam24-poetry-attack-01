@@ -20,7 +20,7 @@ supercollider([[~dirt.loadSoundFiles("${config.path.sounds}/sounds-mocreo/*")]])
     sound = 0.2 * PulseDPW.ar(basefreq2) * DelayC.ar(PulseDPW.ar(basefreq2), 0.2, Line.kr(0.1,0.1+voice,sustain)/basefreq) + sound;
     sound = MoogFF.ar(sound, SinOsc.ar(basefreq/32*speed, 0).range(lfof1,lfof2), resonance*4);
     sound = MoogFF.ar(sound, min(env2*lfof2*1.1, 22000), 3);
-    sound = sound.tanh*5;
+    sound = sound.tanh*3;
     OffsetOut.ar(out, DirtPan.ar(sound, 2, pan, env));
   }).add;
 );
