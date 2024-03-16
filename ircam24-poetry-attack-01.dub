@@ -57,12 +57,12 @@ d1
   # size 0.5
 
 d2
-  $ slow 4
+  $ slow 6
   $ slowcat [
     sound "berimbau",
     sound "berimbau-calango",
     sound "berimbau-session",
     sound "berimbau-slow"
   ]
-  # cut 2
   # n (irand 8)
+
