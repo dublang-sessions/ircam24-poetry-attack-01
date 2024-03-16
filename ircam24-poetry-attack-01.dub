@@ -15,6 +15,7 @@ cycle({
   function()
     espeak([[are here?]])
   end,
+})
 
 cycle({})
 
