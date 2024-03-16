@@ -1,3 +1,44 @@
 #!dublang
 
+supercollider([[~dirt.loadSoundFiles("${config.path.sounds}/sounds-berimbau/*")]])
+supercollider([[~dirt.loadSoundFiles("${config.path.sounds}/sounds-pandeiro/*")]])
+supercollider([[~dirt.loadSoundFiles("${config.path.sounds}/sounds-mocreo/*")]])
+
 return 'hello world'
+
+#!supercollider
+
+(
+  SynthDef(\superpwm, {|out, speed=1, decay=0, sustain=1, pan, accelerate, freq,
+    voice=0.5, semitone=12, resonance=0.2, lfo=1, pitch1=1|
+    var env = EnvGen.ar(Env.pairs([[0,0],[0.05,1],[0.2,1-decay],[0.95,1-decay],[1,0]], -3), timeScale:sustain, doneAction:2);
+    var env2 = EnvGen.ar(Env.pairs([[0,0.1],[0.1,1],[0.4,0.5],[0.9,0.2],[1,0.2]], -3), timeScale:sustain/speed);
+    var basefreq = freq * Line.kr(1, 1+accelerate, sustain);
+    var basefreq2 = basefreq / (2**(semitone/12));
+    var lfof1 = min(basefreq*10*pitch1, 22000);
+    var lfof2 = min(lfof1 * (lfo + 1), 22000);
+    var sound = 0.5 * PulseDPW.ar(basefreq) * DelayC.ar(PulseDPW.ar(basefreq), 0.2, Line.kr(0,voice,sustain)/basefreq);
+    sound = 0.3 * PulseDPW.ar(basefreq2) * DelayC.ar(PulseDPW.ar(basefreq2), 0.2, Line.kr(0.1,0.1+voice,sustain)/basefreq) + sound;
+    sound = MoogFF.ar(sound, SinOsc.ar(basefreq/32*speed, 0).range(lfof1,lfof2), resonance*4);
+    sound = MoogFF.ar(sound, min(env2*lfof2*1.1, 22000), 3);
+    sound = sound.tanh*5;
+    OffsetOut.ar(out, DirtPan.ar(sound, 2, pan, env));
+  }).add;
+);
+
+Synth(\superpwm, [
+  \freq, ${FREQ},
+  \sustain, ${SUSTAIN},
+  \semitone, 8,
+  \lfo, ${FREQ} / ${SUSTAIN},
+  \voice, ${FREQ} / 400,
+]);
+
+s.freeAll;
+
+#!dublang
+|repeat 3
+
+vim.env.FREQ = math.random(660)
+vim.env.SUSTAIN = math.random(5)
+return vim.env.FREQ
