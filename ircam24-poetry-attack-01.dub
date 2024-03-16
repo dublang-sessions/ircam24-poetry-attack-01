@@ -66,5 +66,6 @@ d2
     sound "berimbau-slow"
   ]
   # n (irand 8)
+  # lpf (slow 4 $ range 400 3000 sine)
 
 
