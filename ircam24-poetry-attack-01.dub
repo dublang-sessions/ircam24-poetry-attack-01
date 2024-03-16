@@ -134,7 +134,6 @@ d3
       sound "[bd*2, ~ jazz:7?]" # gain 1 |+ gain (rand * 0.2),
       sound "[bd*2, ~ [jazz:7*4]]" # gain 1 |+ gain (rand * 0.2)
     ],
-    sound "[bd*4, ~ jazz:7?]" # gain 1 |+ gain (rand * 0.2),
     sound "hh*16" # speed 1.5 # gain 1.2 # pan (slow 8 $ sine)
   ]
   # shape 0.2
