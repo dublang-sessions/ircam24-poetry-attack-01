@@ -135,7 +135,7 @@ d4
   $ stack [
     note (palindrome $ scale "chromatic"(run 4)) # gain 1 # vowel "a",
     note (palindrome $ scale "chromatic"(run 8)) # gain 0.8 # vowel "o",
-    note "a*8" # up 8 # speed 2
+    note "a*8" # up 8 # speed 2 # squiz 3
   ]
   # sound "superpiano"
   # orbit 4 # size 0.4 # room 0.5
