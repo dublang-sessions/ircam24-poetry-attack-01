@@ -137,6 +137,7 @@ d4
     note (palindrome $ scale "chromatic"(run 8)) # gain 0.8 # vowel "o"
   ]
   # sound "superpiano"
+  # orbit 4 # size 0.6 # room 0.5
 
 #!espeak
 
