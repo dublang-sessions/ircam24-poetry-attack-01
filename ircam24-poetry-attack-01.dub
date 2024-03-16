@@ -15,7 +15,8 @@ cycle({
   function()
     espeak([[are here?]])
   end,
-})
+
+cycle({})
 
 schedule({
   [1] = function()
