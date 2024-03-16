@@ -30,6 +30,45 @@ schedule({
   end,
 })
 
+schedule({
+  [1] = function()
+    fudi([[onoff 1; vol 0.05; freq 720;]])
+  end,
+  [5] = function()
+    fudi([[onoff 1; vol 0.05; freq 440;]])
+  end,
+  [10] = function()
+    fudi([[onoff 1; vol 0.10; freq 140; delay 1; time 200; mod 150;]])
+  end,
+  [15] = function()
+    fudi([[onoff 1; vol 0.10; freq 440; wave 1;]])
+  end,
+  [20] = function()
+    fudi([[onoff 1; vol 0.20; freq 440; wave 2;]])
+  end,
+  [25] = function()
+    fudi([[freq 2;]])
+  end,
+  [30] = function()
+    fudi([[onoff 0;]])
+  end,
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+onoff 1; freq 920; wave 0;
+
 
 shebang_
 
