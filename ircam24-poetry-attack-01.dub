@@ -128,6 +128,7 @@ d2
 
 d3
   $ sound "[bd*2]"
+  # shape 0.2
 
 d4
   $ off 0.25 (|+ up 8)
