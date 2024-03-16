@@ -17,6 +17,18 @@ cycle({
   end,
 })
 
+schedule({
+  [1] = function()
+    espeak([[how many?]])
+  end,
+  [10] = function()
+    espeak([[black people?]])
+  end,
+  [20] = function()
+    espeak([[are here?]])
+  end,
+})
+
 #!supercollider
 |repeat 10
 
