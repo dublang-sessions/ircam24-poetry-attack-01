@@ -1,0 +1,2 @@
+#!/bin/sh
+puredata -jack -nogui ~/art/sounds/synths-puredata/dub-siren/DUB_SIREN.pd
