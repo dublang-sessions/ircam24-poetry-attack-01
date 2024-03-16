@@ -67,5 +67,6 @@ d2
   ]
   # n (irand 8)
   # lpf (slow 4 $ range 400 3000 sine)
+  # speed 1 |+ speed (slow 2 $ sine * 0.5)
 
 
