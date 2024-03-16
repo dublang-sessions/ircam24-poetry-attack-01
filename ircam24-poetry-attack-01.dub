@@ -132,7 +132,7 @@ d2
 
 xfadeIn 4 16 $ silence
 
-d3
+xfadeIn 3 32
   $ stack [
     slowcat [
       sound "[bd*2, ~ jazz:7?]" # gain 1 |+ gain (rand * 0.2),
