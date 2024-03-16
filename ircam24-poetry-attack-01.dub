@@ -123,6 +123,8 @@ d2
   # gain (slow 6 $ palindrome $ range 0.5 1 sine)
   |+ gain 0.2 # shape 0.2
 
+xfadeIn 1 16 $ silence
+
 d3
   $ stack [
     slowcat [
