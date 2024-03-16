@@ -71,4 +71,4 @@ d2
   # speed 1 |+ speed (slow 2 $ sine * 0.5)
   # gain (slow 6 $ palindrome $ range 0.5 1 sine)
 
-
+d3 $ sound "bd"
