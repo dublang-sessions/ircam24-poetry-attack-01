@@ -47,7 +47,6 @@ return vim.env.FREQ
 #!tidalcycles
 
 
-d1 $ s "cp"
-
+d1
   $ sound "pandeiro(3,8)"
   # n (irand 5)
