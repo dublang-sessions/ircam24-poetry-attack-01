@@ -140,6 +140,7 @@ d4
   # sound "superpiano"
   # orbit 4 # size 0.4 # room 0.5
   # pan "[0|1]"
+  |- gain (rand * 0.2)
 
 #!espeak
 
