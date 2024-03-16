@@ -1,5 +1,5 @@
 # dublang config (0.6.0-0)
 
-PLUGINS="git echo"
+PLUGINS="git supercollider tidalcycles espeak"
 
 # vim: ft=config
