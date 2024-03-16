@@ -132,7 +132,10 @@ d4
   $ off 0.25 (|+ up 8)
   $ off "-0.25" (|- up 8)
   $ degrade
-  $ note (palindrome $ scale "chromatic"(run 4))
+  $ stack [
+    note (palindrome $ scale "chromatic"(run 4)),
+    note (palindrome $ scale "chromatic"(run 8))
+  ]
   # sound "superpiano"
 
 #!espeak
