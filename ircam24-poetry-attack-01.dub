@@ -7,6 +7,7 @@ supercollider([[~dirt.loadSoundFiles("${config.path.sounds}/sounds-mocreo/*")]])
 return 'hello world'
 
 #!supercollider
+|repeat 5
 
 (
   SynthDef(\superpwm, {|out, speed=1, decay=0, sustain=1, pan, accelerate, freq,
