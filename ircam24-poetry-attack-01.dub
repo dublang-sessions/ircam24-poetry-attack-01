@@ -15,7 +15,8 @@ cycle({
   function()
     espeak([[are here?]])
   end,
-})
+
+cycle({})
 
 schedule({
   [1] = function()
@@ -28,6 +29,10 @@ schedule({
     espeak([[are here?]])
   end,
 })
+
+
+shebang_
+
 
 #!supercollider
 |repeat 10
