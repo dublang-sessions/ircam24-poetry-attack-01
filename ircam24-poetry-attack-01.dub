@@ -134,7 +134,7 @@ d4
   $ degrade
   $ stack [
     note (palindrome $ scale "chromatic"(run 4)) # gain 1 # vowel "a",
-    note (palindrome $ scale "chromatic"(run 8)) # gain 0.8
+    note (palindrome $ scale "chromatic"(run 8)) # gain 0.8 # vowel "o"
   ]
   # sound "superpiano"
 
