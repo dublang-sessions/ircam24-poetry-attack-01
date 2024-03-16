@@ -4,6 +4,19 @@ supercollider([[~dirt.loadSoundFiles("${config.path.sounds}/sounds-berimbau/*")]
 supercollider([[~dirt.loadSoundFiles("${config.path.sounds}/sounds-pandeiro/*")]])
 supercollider([[~dirt.loadSoundFiles("${config.path.sounds}/sounds-mocreo/*")]])
 
+length(9000)
+cycle({
+  function()
+    espeak([[how many?]])
+  end,
+  function()
+    espeak([[black people?]])
+  end,
+  function()
+    espeak([[are here?]])
+  end,
+})
+
 #!supercollider
 |repeat 10
 
