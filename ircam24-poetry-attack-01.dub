@@ -130,6 +130,7 @@ d3 $ sound "bd"
 
 d4
   $ off 0.25 (|+ up 8)
+  $ off 0.15 (|- up 8)
   $ degrade
   $ note (palindrome $ scale "chromatic"(run 8))
   # sound "superpiano"
