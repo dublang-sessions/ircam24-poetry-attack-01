@@ -98,7 +98,7 @@ return vim.env.FREQ
 
 #!tidalcycles
 
-once $ s "mocreo"
+once $ s "mocreo" # n (irand 8)
 
 d1
   $ sometimes (stut 8 0.5 0.25)
