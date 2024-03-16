@@ -49,7 +49,7 @@ return vim.env.FREQ
 
 d1
   $ sometimes (stut 8 0.5 0.25)
-  $ often (# vowel "a")
+  $ often (# vowel "[a|u|i]")
   $ sound "pandeiro(5,8)"
   # n (irand 5)
   # orbit 1
