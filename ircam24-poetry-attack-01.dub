@@ -190,6 +190,7 @@ xfadeIn 4 32
   |- gain (rand * 0.2)
 
 d5
+  $ off "-0.125" (|- up 8)
   $ degradeBy 0.8
   $ stack [
     note (scale "chromatic" (run 12)) # lpf 1000,
