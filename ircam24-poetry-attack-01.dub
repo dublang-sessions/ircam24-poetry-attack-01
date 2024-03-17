@@ -311,7 +311,7 @@ d8
 
 d9
   $ sound "pandeiro(5,8)"
-  # n 6
+  # n 7
 
 #!espeak
 
