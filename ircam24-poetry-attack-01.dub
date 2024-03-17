@@ -321,6 +321,10 @@ d9
   ]
   # shape 0.2
 
+do
+  xfadeIn 6 32 $ silence
+  xfadeIn 7 32 $ silence
+
 #!espeak
 
 In another hundred and twenty days the building of the Integral will be completed.
