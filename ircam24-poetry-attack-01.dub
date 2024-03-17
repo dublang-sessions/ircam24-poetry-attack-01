@@ -95,39 +95,45 @@ schedule({
     fudi([[onoff 1; vol 0.21; freq 235; wave 2; delay 1; time 500; mod 110;]])
   end,
   [5] = function()
-    fudi([[onoff 1; vol 0.22; freq 240; wave 1; delay 0; time 80; mod 100;]])
+    fudi([[onoff 0;]])
   end,
   [6] = function()
-    fudi([[onoff 1; vol 0.21; freq 245; wave 3; delay 1; time 20; mod 90;]])
+    fudi([[onoff 1; vol 0.22; freq 240; wave 1; delay 0; time 80; mod 100;]])
   end,
   [7] = function()
-    fudi([[onoff 1; vol 0.21; freq 250; wave 2; delay 1; time 1000; mod 80;]])
+    fudi([[onoff 1; vol 0.21; freq 245; wave 3; delay 1; time 20; mod 90;]])
   end,
   [8] = function()
-    fudi([[onoff 1; vol 0.21; freq 255; wave 3; delay 0; time 200; mod 70;]])
+    fudi([[onoff 1; vol 0.21; freq 250; wave 2; delay 1; time 1000; mod 80;]])
   end,
   [9] = function()
-    fudi([[onoff 1; vol 0.20; freq 260; wave 1; delay 0; time 250; mod 60;]])
+    fudi([[onoff 1; vol 0.21; freq 255; wave 3; delay 0; time 200; mod 70;]])
   end,
   [10] = function()
-    fudi([[onoff 1; vol 0.20; freq 265; wave 0; delay 1; time 300; mod 50;]])
+    fudi([[onoff 0;]])
   end,
   [11] = function()
-    fudi([[onoff 1; vol 0.20; freq 270; wave 1; delay 0; time 350; mod 40;]])
+    fudi([[onoff 1; vol 0.20; freq 260; wave 1; delay 0; time 250; mod 60;]])
   end,
   [12] = function()
+    fudi([[onoff 1; vol 0.20; freq 265; wave 0; delay 1; time 300; mod 50;]])
+  end,
+  [13] = function()
+    fudi([[onoff 1; vol 0.20; freq 270; wave 1; delay 0; time 350; mod 40;]])
+  end,
+  [14] = function()
     fudi([[onoff 1; vol 0.20; freq 275; wave 2; delay 1; time 400; mod 30;]])
   end,
-  [15] = function()
+  [17] = function()
     fudi([[freq 2; vol 0.25;]])
   end,
-  [16] = function()
+  [18] = function()
     fudi([[freq 4; vol 0.30;]])
   end,
-  [17] = function()
+  [19] = function()
     fudi([[freq 6; vol 0.32;]])
   end,
-  [18] = function()
+  [20] = function()
     fudi([[onoff 0;]])
   end,
 })
