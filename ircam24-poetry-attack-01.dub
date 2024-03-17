@@ -117,7 +117,7 @@ Synth(\superpwm, [
 |repeat 3
 
 vim.env.FREQ = math.random(660)
-vim.env.SUSTAIN = math.random(5)
+vim.env.SUSTAIN = math.random(8)
 return vim.env.FREQ
 
 #!tidalcycles
