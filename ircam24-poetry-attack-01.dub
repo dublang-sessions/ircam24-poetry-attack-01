@@ -295,7 +295,7 @@ do
   xfadeIn 7 32 $ silence
 
 d8
-  $ off 0.5 ((|* speed "-1") . (gap 2))
+  $ off 0.125 ((|* speed "-1") . (gap 2))
   $ slow 8
   $ slowcat [
     sound "berimbau",
