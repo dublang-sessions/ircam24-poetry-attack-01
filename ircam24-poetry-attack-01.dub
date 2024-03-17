@@ -180,14 +180,19 @@ xfadeIn 4 32
   $ off "-0.25" (|- up 8)
   $ degrade
   $ stack [
-    note (palindrome $ scale "chromatic"(run 4)) # gain 1 # vowel "a",
-    note (palindrome $ scale "chromatic"(run 8)) # gain 0.8 # vowel "o",
+    note (palindrome $ scale "chromatic" (run 4)) # gain 1 # vowel "a",
+    note (palindrome $ scale "chromatic" (run 8)) # gain 0.8 # vowel "o",
     note "a*8" # up 8 # speed 2 # squiz 3 # gain 0.8
   ]
   # sound "superpiano"
   # orbit 4 # size 0.4 # room 0.5
   # pan "[0|1]"
   |- gain (rand * 0.2)
+
+d5
+  $ degradeBy 0.8
+  # note (scale "chromatic" run (12))
+  # sound "bass2"
 
 #!espeak
 
