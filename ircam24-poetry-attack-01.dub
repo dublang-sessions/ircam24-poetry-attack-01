@@ -269,6 +269,7 @@ do
 
 d6
   $ sound "bd*4"
+  # gain 1 # shape 0.2
 
 #!espeak
 
