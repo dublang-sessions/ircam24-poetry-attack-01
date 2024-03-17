@@ -281,7 +281,7 @@ d7
   $ off 0.25 (|+ up 8)
   $ off "-0.25" (|- up 8)
   $ degrade
-  $ stack [
+  $ slowcat [
     note "c'maj" # gain 1 # vowel "a",
     note "g'maj" # gain 0.8 # vowel "o",
     note "e'maj" # up 8 # speed 2 # squiz 3 # gain 0.8
