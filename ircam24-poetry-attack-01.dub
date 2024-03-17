@@ -268,6 +268,7 @@ do
 -- T20: silence
 
 d6
+  $ whenmod 16 9 (superimpose (fast 2))
   $ stack [
     sound "[bd*4, jazz:7(3,8), hh:5*4]" # shape 0.3,
     sound "hh27*16" # pan (slow 4 $ sine) # shape 0.5
