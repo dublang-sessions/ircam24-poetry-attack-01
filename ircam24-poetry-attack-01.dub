@@ -4,7 +4,7 @@ supercollider([[~dirt.loadSoundFiles("${config.path.sounds}/sounds-berimbau/*")]
 supercollider([[~dirt.loadSoundFiles("${config.path.sounds}/sounds-pandeiro/*")]])
 supercollider([[~dirt.loadSoundFiles("${config.path.sounds}/sounds-mocreo/*")]])
 
-length(10000)
+length(20000)
 cycle({
   function()
     espeak([[question?]])
@@ -21,7 +21,6 @@ cycle({
 })
 
 cycle({})
-
 
 schedule({
   [1] = function()
