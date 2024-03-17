@@ -1,0 +1,11 @@
+[Unit]
+Description=dublang fudi service
+
+[Service]
+Type=simple
+Environment="PATH=$PATH"
+Environment="HOME=$HOME"
+ExecStart=$PWD/handlers/fudi-start
+
+[Install]
+WantedBy=multi-user.target
