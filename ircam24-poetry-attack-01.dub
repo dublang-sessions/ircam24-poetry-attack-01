@@ -318,6 +318,7 @@ d9
     sometimes (# speed "[0.85|0.95]")
       $ sound "pandeiro(1,8)" # n 3 # gain (slow 16 $ sine)
   ]
+  |+ gain 0.2
 
 #!espeak
 
