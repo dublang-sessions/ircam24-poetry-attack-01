@@ -81,6 +81,45 @@ schedule({
   end,
 })
 
+schedule({
+  [1] = function()
+    fudi([[onoff 1; vol 0.20; freq 720; wave 0; delay 1; time 500; mod 100;]])
+  end,
+  [2] = function()
+    fudi([[onoff 1; vol 0.15; freq 730; wave 0; delay 1; time 500; mod 150;]])
+  end,
+  [3] = function()
+    fudi([[onoff 1; vol 0.20; freq 440; wave 0; delay 1; time 250;]])
+  end,
+  [4] = function()
+    fudi([[onoff 1; vol 0.21; freq 430; wave 0; delay 1; time 550;]])
+  end,
+  [5] = function()
+    fudi([[onoff 1; vol 0.22; freq 440; wave 1; delay 1; time 650;]])
+  end,
+  [6] = function()
+    fudi([[onoff 1; vol 0.21; freq 140; wave 3; delay 1; time 200; mod 150;]])
+  end,
+  [9] = function()
+    fudi([[onoff 1; vol 0.20; freq 440; wave 1; delay 0;]])
+  end,
+  [12] = function()
+    fudi([[onoff 1; vol 0.20; freq 440; wave 2; delay 1;]])
+  end,
+  [15] = function()
+    fudi([[freq 2; vol 0.25;]])
+  end,
+  [16] = function()
+    fudi([[freq 4; vol 0.30;]])
+  end,
+  [17] = function()
+    fudi([[freq 6; vol 0.32;]])
+  end,
+  [18] = function()
+    fudi([[onoff 0;]])
+  end,
+})
+
 
 #!supercollider
 
