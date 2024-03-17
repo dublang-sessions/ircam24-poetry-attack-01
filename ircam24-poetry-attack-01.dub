@@ -291,11 +291,8 @@ d7
   # attack 0.2 # sustain 1 # release 0.5
 
 do
-  xfadeIn 1 32 $ silence
-  xfadeIn 2 32 $ silence
-  xfadeIn 3 32 $ silence
-  xfadeIn 4 32 $ silence
-  xfadeIn 5 32 $ silence
+  xfadeIn 6 32 $ silence
+  xfadeIn 7 32 $ silence
 
 
 #!espeak
