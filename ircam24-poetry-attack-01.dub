@@ -280,7 +280,7 @@ d6
 d7
   $ off 0.25 (|+ up 8)
   $ off "-0.25" (|- up 8)
-  $ stut 2 0.9 0.25
+  $ stut 3 0.9 0.25
   $ slowcat [
     note "c'maj" # gain 1.0 # vowel "a",
     note "g'maj" # gain 0.9 # vowel "o",
