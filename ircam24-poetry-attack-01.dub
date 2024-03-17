@@ -278,7 +278,7 @@ d6
 
 
 d7
-  $ sometimes (rev)
+  $ sometimes (rev . chop 2)
   $ off 0.25 (|+ up 8)
   $ off "-0.25" (|- up 8)
   $ stut (irand 4) 0.9 0.125
