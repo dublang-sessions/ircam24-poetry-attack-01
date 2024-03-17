@@ -294,6 +294,15 @@ do
   xfadeIn 6 32 $ silence
   xfadeIn 7 32 $ silence
 
+d8
+  $ slow 8
+  $ slowcat [
+    sound "berimbau",
+    sound "berimbau-calango",
+    sound "berimbau-session",
+    sound "berimbau-slow"
+  ]
+  # n (irand 8)
 
 #!espeak
 
