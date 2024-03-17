@@ -270,7 +270,7 @@ do
 d6
   $ sound "[bd*4, jazz:7(3,8)]"
   # gain 1.2 # shape 0.3
-  # lpf 2100 # vowel "u"
+  # lpf 2100 # vowel "o"
 
 #!espeak
 
