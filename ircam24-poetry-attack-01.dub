@@ -295,6 +295,7 @@ do
   xfadeIn 7 32 $ silence
 
 d8
+  $ sometimes (chop 3)
   $ often (|* speed "-1")
   $ slow 8
   $ slowcat [
