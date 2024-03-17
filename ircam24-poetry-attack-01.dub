@@ -86,37 +86,37 @@ schedule({
     fudi([[onoff 1; vol 0.20; freq 220; wave 0; delay 1; time 200; mod 100;]])
   end,
   [2] = function()
-    fudi([[onoff 1; vol 0.15; freq 221; wave 0; delay 1; time 200; mod 150;]])
+    fudi([[onoff 1; vol 0.15; freq 225; wave 0; delay 1; time 200; mod 150;]])
   end,
   [3] = function()
-    fudi([[onoff 1; vol 0.20; freq 222; wave 0; delay 1; time 200;]])
+    fudi([[onoff 1; vol 0.20; freq 230; wave 0; delay 1; time 200;]])
   end,
   [4] = function()
-    fudi([[onoff 1; vol 0.21; freq 223; wave 0; delay 1; time 200;]])
+    fudi([[onoff 1; vol 0.21; freq 235; wave 0; delay 1; time 200;]])
   end,
   [5] = function()
-    fudi([[onoff 1; vol 0.22; freq 224; wave 1; delay 1; time 200;]])
+    fudi([[onoff 1; vol 0.22; freq 240; wave 1; delay 1; time 200;]])
   end,
   [6] = function()
-    fudi([[onoff 1; vol 0.21; freq 225; wave 3; delay 1; time 200; mod 150;]])
+    fudi([[onoff 1; vol 0.21; freq 245; wave 3; delay 1; time 200; mod 150;]])
   end,
   [7] = function()
-    fudi([[onoff 1; vol 0.21; freq 226; wave 3; delay 1; time 200; mod 150;]])
+    fudi([[onoff 1; vol 0.21; freq 250; wave 3; delay 1; time 200; mod 150;]])
   end,
   [8] = function()
-    fudi([[onoff 1; vol 0.21; freq 227; wave 3; delay 1; time 200; mod 150;]])
+    fudi([[onoff 1; vol 0.21; freq 255; wave 3; delay 1; time 200; mod 150;]])
   end,
   [9] = function()
-    fudi([[onoff 1; vol 0.20; freq 228; wave 1; delay 0;]])
+    fudi([[onoff 1; vol 0.20; freq 260; wave 1; delay 0; time 200;]])
   end,
   [10] = function()
-    fudi([[onoff 1; vol 0.20; freq 229; wave 1; delay 0;]])
+    fudi([[onoff 1; vol 0.20; freq 265; wave 1; delay 0; time 200;]])
   end,
   [11] = function()
-    fudi([[onoff 1; vol 0.20; freq 230; wave 1; delay 0;]])
+    fudi([[onoff 1; vol 0.20; freq 270; wave 1; delay 0; time 200;]])
   end,
   [12] = function()
-    fudi([[onoff 1; vol 0.20; freq 231; wave 2; delay 1;]])
+    fudi([[onoff 1; vol 0.20; freq 275; wave 2; delay 1; time 200;]])
   end,
   [15] = function()
     fudi([[freq 2; vol 0.25;]])
