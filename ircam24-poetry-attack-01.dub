@@ -310,8 +310,10 @@ d8
   # shape 0.25 |- shape (rand * 0.25)
 
 d9
-  $ sound "pandeiro(5,8)"
-  # n 0
+  $ stack [
+    sound "pandeiro(5,8)" # n 0,
+    sound "pandeiro(3,8)" # n 1
+  ]
 
 #!espeak
 
