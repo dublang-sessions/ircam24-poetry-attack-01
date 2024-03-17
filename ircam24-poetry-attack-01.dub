@@ -322,8 +322,8 @@ d9
   # shape 0.2
 
 do
-  xfadeIn 6 32 $ silence
-  xfadeIn 7 32 $ silence
+  xfadeIn 8 32 $ silence
+  xfadeIn 9 32 $ silence
 
 #!espeak
 
