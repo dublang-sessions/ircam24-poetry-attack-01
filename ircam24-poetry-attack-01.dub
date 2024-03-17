@@ -270,7 +270,7 @@ do
 d6
   $ stack [
     sound "[bd*4, jazz:7(3,8), hh:5*4]" # shape 0.3,
-    sound "hh27*16" # pan (slow 4 $ sine) # shape 0.4
+    sound "hh27*16" # pan (slow 4 $ sine) # shape 0.5
   ]
   # gain 1.2
   # lpf 2100 # vowel "o"
