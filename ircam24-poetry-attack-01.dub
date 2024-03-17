@@ -312,7 +312,7 @@ d8
 d9
   $ stack [
     sound "pandeiro(5,8)" # n 0,
-    sound "pandeiro(3,8)" # n 1
+    sound "pandeiro(6,8)" # n 1
   ]
 
 #!espeak
