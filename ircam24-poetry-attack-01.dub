@@ -279,7 +279,6 @@ d6
 
 
 d7
-  $ sometimes (rev . chop 2)
   $ off 0.25 (|+ up 8)
   $ off "-0.25" (|- up 8)
   $ stut (irand 4) 0.9 0.125
@@ -290,6 +289,13 @@ d7
   ]
   # sound "[superpiano, supersiren?]"
   # attack 0.2 # sustain 1 # release 0.5
+
+do
+  xfadeIn 1 32 $ silence
+  xfadeIn 2 32 $ silence
+  xfadeIn 3 32 $ silence
+  xfadeIn 4 32 $ silence
+  xfadeIn 5 32 $ silence
 
 
 #!espeak
