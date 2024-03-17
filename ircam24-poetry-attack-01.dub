@@ -191,7 +191,10 @@ xfadeIn 4 32
 
 d5
   $ degradeBy 0.8
-  $ note (scale "chromatic" (run 12))
+  $ stack [
+    note (scale "chromatic" (run 12)),
+    note (scale "chromatic" (run 4)) # lpf 2000
+  ]
   # sound "bass2"
 
 #!espeak
