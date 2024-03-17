@@ -98,8 +98,6 @@ Synth(\superpwm, [
   \voice, ${FREQ} / 400,
 ]);
 
-s.freeAll;
-
 #!dublang
 |repeat 3
 
