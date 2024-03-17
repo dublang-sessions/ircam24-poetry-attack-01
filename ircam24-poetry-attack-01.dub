@@ -277,3 +277,10 @@ freq 2;
 
 onoff 1; freq 920; wave 0;
 
+#!puredata
+
+open /home/joenio/art/sounds/synths-puredata/oscillator/sine.pd
+
+send /home/joenio/art/sounds/synths-puredata/oscillator/sine.pd freq 50
+send /home/joenio/art/sounds/synths-puredata/oscillator/sine.pd vol 0.5
+
