@@ -295,6 +295,7 @@ do
   xfadeIn 7 32 $ silence
 
 d8
+  $ often (|* speed "-1")
   $ slow 8
   $ slowcat [
     sound "berimbau",
@@ -303,6 +304,7 @@ d8
     sound "berimbau-slow"
   ]
   # n (irand 8)
+  # speed 1
   # cut 8
 
 #!espeak
