@@ -197,6 +197,13 @@ d5
   ]
   # sound "bass2"
 
+do
+  xfadeIn 1 32 $ silence
+  xfadeIn 2 32 $ silence
+  xfadeIn 3 32 $ silence
+  xfadeIn 4 32 $ silence
+  xfadeIn 5 32 $ silence
+
 #!espeak
 
 In another hundred and twenty days the building of the Integral will be completed.
