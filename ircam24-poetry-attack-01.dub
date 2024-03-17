@@ -36,22 +36,22 @@ schedule({
   [1] = function()
     fudi([[onoff 1; vol 0.10; freq 720; mod 500;]])
   end,
-  [5] = function()
+  [3] = function()
     fudi([[onoff 1; vol 0.15; freq 440; delay 0; time 10;]])
   end,
-  [10] = function()
+  [6] = function()
     fudi([[onoff 1; vol 0.17; freq 140; delay 1; time 200; mod 150;]])
   end,
-  [15] = function()
+  [9] = function()
     fudi([[onoff 1; vol 0.18; freq 440; wave 1;]])
   end,
-  [20] = function()
+  [12] = function()
     fudi([[onoff 1; vol 0.20; freq 440; wave 2;]])
   end,
-  [25] = function()
-    fudi([[freq 2;]])
+  [15] = function()
+    fudi([[freq 2; vol 0.30;]])
   end,
-  [30] = function()
+  [18] = function()
     fudi([[onoff 0;]])
   end,
 })
