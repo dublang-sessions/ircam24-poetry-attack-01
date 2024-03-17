@@ -23,10 +23,10 @@ schedule({
   [1] = function()
     espeak([[how many?]])
   end,
-  [10] = function()
+  [5] = function()
     espeak([[black people?]])
   end,
-  [20] = function()
+  [10] = function()
     espeak([[are here?]])
   end,
 })
