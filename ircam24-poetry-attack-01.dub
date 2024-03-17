@@ -86,7 +86,7 @@ schedule({
     fudi([[onoff 1; vol 0.20; freq 220; wave 0; delay 1; time 200; mod 100;]])
   end,
   [2] = function()
-    fudi([[onoff 1; vol 0.15; freq 225; wave 0; delay 1; time 200; mod 110;]])
+    fudi([[onoff 1; vol 0.15; freq 225; wave 0; delay 0; time 200; mod 110;]])
   end,
   [3] = function()
     fudi([[onoff 1; vol 0.20; freq 230; wave 0; delay 1; time 200; mod 120;]])
