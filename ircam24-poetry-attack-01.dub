@@ -271,7 +271,7 @@ d6
   $ sound "[bd*4, jazz:7(3,8)]"
   # gain 1.2 # shape 0.3
   # lpf 2100 # vowel "o"
-  # orbit 6 # room 0.1 # size 0.5
+  # orbit 6 # room 0.5 # size 0.1
 
 #!espeak
 
