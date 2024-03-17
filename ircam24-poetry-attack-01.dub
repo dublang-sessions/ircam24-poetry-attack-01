@@ -315,7 +315,7 @@ d9
     sound "pandeiro(6,8)" # n 1 # gain (slow 22 $ tri),
     rarely (stut 3 0.75 0.25)
       $ sound "pandeiro(2,8)" # n 2 # gain (slow 4 $ rand + 0.2),
-    often (# speed "0.95")
+    often (# speed "0.85")
       $ sound "pandeiro(1,8)" # n 3 # gain (slow 16 $ sine)
   ]
 
