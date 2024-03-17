@@ -110,13 +110,13 @@ schedule({
     fudi([[onoff 1; vol 0.20; freq 260; wave 1; delay 0; time 200; mod 60;]])
   end,
   [10] = function()
-    fudi([[onoff 1; vol 0.20; freq 265; wave 1; delay 0; time 200;]])
+    fudi([[onoff 1; vol 0.20; freq 265; wave 1; delay 0; time 200; mod 50;]])
   end,
   [11] = function()
-    fudi([[onoff 1; vol 0.20; freq 270; wave 1; delay 0; time 200;]])
+    fudi([[onoff 1; vol 0.20; freq 270; wave 1; delay 0; time 200; mod 40;]])
   end,
   [12] = function()
-    fudi([[onoff 1; vol 0.20; freq 275; wave 2; delay 1; time 200;]])
+    fudi([[onoff 1; vol 0.20; freq 275; wave 2; delay 1; time 200; mod 30;]])
   end,
   [15] = function()
     fudi([[freq 2; vol 0.25;]])
