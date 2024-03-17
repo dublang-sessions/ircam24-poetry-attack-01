@@ -276,6 +276,19 @@ d6
   # lpf 2100 # vowel "o"
   # orbit 6 # room 0.25 # size 0.1
 
+
+d7
+  $ off 0.25 (|+ up 8)
+  $ off "-0.25" (|- up 8)
+  $ degrade
+  $ stack [
+    note "c'maj" # gain 1 # vowel "a",
+    note "g'maj" # gain 0.8 # vowel "o",
+    note "e'maj" # up 8 # speed 2 # squiz 3 # gain 0.8
+  ]
+  # sound "superpiano"
+
+
 #!espeak
 
 In another hundred and twenty days the building of the Integral will be completed.
