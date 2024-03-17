@@ -265,6 +265,11 @@ do
   xfadeIn 4 32 $ silence
   xfadeIn 5 32 $ silence
 
+-- T20: silence
+
+d6
+  $ sound "bd*4"
+
 #!espeak
 
 In another hundred and twenty days the building of the Integral will be completed.
