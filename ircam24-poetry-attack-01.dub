@@ -304,6 +304,7 @@ d8
     sound "berimbau-slow"
   ]
   # n (irand 8)
+  # cut 8
 
 #!espeak
 
