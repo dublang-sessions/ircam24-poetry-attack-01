@@ -305,6 +305,7 @@ d8
     sound "berimbau-slow" # cut 11
   ]
   # n (irand 8)
+  # gain 1.2
   # speed 0.85 |+ speed (slow 8 $ tri * 0.25)
   # lpf 1500 |+ lpf (slow 4 $ palindrome $ range 100 500 $ sine)
   # shape 0.25 |- shape (rand * 0.25)
