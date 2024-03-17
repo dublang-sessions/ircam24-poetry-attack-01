@@ -313,7 +313,7 @@ d9
   $ stack [
     sound "pandeiro(5,8)" # n 0 # lpf 10000 |* lpf (slow 2 $ palindrome $ range 0.5 1 $ sine),
     sound "pandeiro(6,8)" # n 1 # gain (slow 22 $ tri),
-    often (stut 2 0.5 0.25)
+    often (stut 2 0.75 0.25)
       $ sound "pandeiro(2,8)" # n 2 # gain (slow 4 $ rand + 0.2),
     sound "pandeiro(1,8)" # n 3 # gain (slow 16 $ sine)
   ]
