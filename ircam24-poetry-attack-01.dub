@@ -116,7 +116,7 @@ Synth(\superpwm, [
 #!dublang
 |repeat 3
 
-vim.env.FREQ = math.random(660)
+vim.env.FREQ = math.random(460)
 vim.env.SUSTAIN = math.random(8)
 return vim.env.FREQ
 
