@@ -306,6 +306,7 @@ d8
   ]
   # n (irand 8)
   # speed 0.85 # lpf 1500 # shape 0.25
+  |+ lpf (slow 4 $ palindrome $ range 100 500 $ sine)
 
 #!espeak
 
