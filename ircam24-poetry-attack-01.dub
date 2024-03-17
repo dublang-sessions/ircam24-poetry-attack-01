@@ -43,10 +43,10 @@ schedule({
     fudi([[onoff 1; vol 0.17; freq 140; wave 3; delay 1; time 200; mod 150;]])
   end,
   [9] = function()
-    fudi([[onoff 1; vol 0.18; freq 440; wave 1;]])
+    fudi([[onoff 1; vol 0.18; freq 440; wave 1; delay 0;]])
   end,
   [12] = function()
-    fudi([[onoff 1; vol 0.20; freq 440; wave 2;]])
+    fudi([[onoff 1; vol 0.20; freq 440; wave 2; delay 1;]])
   end,
   [15] = function()
     fudi([[freq 2; vol 0.30;]])
