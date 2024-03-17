@@ -58,7 +58,6 @@ schedule({
 
 
 #!supercollider
-|repeat 10
 
 (
   SynthDef(\superpwm, {|out, speed=1, decay=0, sustain=1, pan, accelerate, freq,
@@ -77,6 +76,10 @@ schedule({
     OffsetOut.ar(out, DirtPan.ar(sound, 2, pan, env));
   }).add;
 );
+
+#!supercollider
+
+|repeat 10
 
 Synth(\superpwm, [
   \freq, ${FREQ},
