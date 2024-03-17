@@ -172,9 +172,7 @@ xfadeIn 3 32
   ]
   # shape 0.2
 
-hush
-
-d4
+xfadeIn 4 32
   $ off 0.25 (|+ up 8)
   $ off "-0.25" (|- up 8)
   $ degrade
