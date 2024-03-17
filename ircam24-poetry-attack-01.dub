@@ -284,7 +284,7 @@ d7
   $ slowcat [
     note "c'maj" # gain 1 # vowel "a",
     note "g'maj" # gain 0.8 # vowel "o",
-    note "e'maj" # up 8 # speed 2 # squiz 3 # gain 0.8
+    note "e'maj" # up 8 # speed 2 # squiz 1.2 # gain 0.8
   ]
   # sound "superpiano"
   # attack 0.2 # sustain 1 # release 0.5
