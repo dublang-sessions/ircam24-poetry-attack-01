@@ -58,7 +58,6 @@ schedule({
 
 
 #!supercollider
-
 |repeat 10
 
 (
@@ -281,7 +280,16 @@ onoff 1; freq 920; wave 0;
 
 open /home/joenio/art/sounds/synths-puredata/oscillator/sine.pd
 
-send /home/joenio/art/sounds/synths-puredata/oscillator/sine.pd freq 50
+send /home/joenio/art/sounds/synths-puredata/oscillator/sine.pd freq 66
 
 send /home/joenio/art/sounds/synths-puredata/oscillator/sine.pd vol 0.5
 
+close /home/joenio/art/sounds/synths-puredata/oscillator/sine.pd
+
+open /home/joenio/art/sounds/synths-puredata/oscillator/sawtooth.pd
+
+send /home/joenio/art/sounds/synths-puredata/oscillator/sawtooth.pd freq 46
+
+send /home/joenio/art/sounds/synths-puredata/oscillator/sawtooth.pd vol 0.5
+
+close /home/joenio/art/sounds/synths-puredata/oscillator/sawtooth.pd
