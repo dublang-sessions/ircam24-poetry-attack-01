@@ -282,9 +282,9 @@ d7
   $ off "-0.25" (|- up 8)
   $ stut (irand 4) 0.9 0.125
   $ slowcat [
-    palindrome $ note "c'maj" # gain 1.0 # vowel "a",
-    palindrome $ note "<c'min g'maj>" # gain 0.9 # vowel "o",
-    palindrome $ note "<e'maj e'min>" # gain 0.8 # vowel "u"
+    chop 4 $ note "c'maj" # gain 1.0 # vowel "a",
+    chop 4 $ note "<c'min g'maj>" # gain 0.9 # vowel "o",
+    chop 4 $ note "<e'maj e'min>" # gain 0.8 # vowel "u"
   ]
   # sound "superpiano"
   # attack 0.2 # sustain 1 # release 0.5
