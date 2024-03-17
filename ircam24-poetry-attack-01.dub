@@ -19,6 +19,8 @@ cycle({
 
 cycle({})
 
+espeak([[question?]])
+
 schedule({
   [1] = function()
     espeak([[how many?]])
