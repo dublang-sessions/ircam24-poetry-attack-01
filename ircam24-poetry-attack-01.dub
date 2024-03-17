@@ -313,7 +313,7 @@ d9
   $ stack [
     sound "pandeiro(5,8)" # n 0,
     sound "pandeiro(6,8)" # n 1 # gain (slow 22 $ tri),
-    sound "pandeiro(2,8)" # n 2,
+    sound "pandeiro(2,8)" # n 2 # gain (slow 4 $ rand),
     sound "pandeiro(1,8)" # n 3 # gain (slow 16 $ sine)
   ]
 
