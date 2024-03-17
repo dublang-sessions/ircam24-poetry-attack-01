@@ -154,7 +154,6 @@ d2
   # lpf (slow 4 $ range 400 3000 sine)
   # speed 1 |+ speed (slow 2 $ sine * 0.5)
   # gain (slow 6 $ palindrome $ range 0.75 1 sine)
-  |+ gain 0.2 # shape 0.2
 
 xfadeIn 4 16 $ silence
 
