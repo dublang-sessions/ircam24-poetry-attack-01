@@ -127,7 +127,7 @@ d1
   $ fast 2
   $ sometimes (off 0.25 (# up "-8"))
   $ stut 3 0.5 0.5
-  $ s "mocreo"
+  $ s "mocreo*2"
   # n (irand 8)
   # gain 1 # shape 0.4
 
