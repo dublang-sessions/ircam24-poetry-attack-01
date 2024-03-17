@@ -103,8 +103,7 @@ schedule({
 );
 
 #!supercollider
-
-|repeat 10
+|repeat 2
 
 Synth(\superpwm, [
   \freq, ${FREQ},
