@@ -19,16 +19,18 @@ cycle({
 
 cycle({})
 
-espeak([[question?]])
 
 schedule({
   [1] = function()
     espeak([[how many?]])
   end,
   [5] = function()
-    espeak([[black people?]])
+    espeak([[how many?]])
   end,
   [10] = function()
+    espeak([[black people?]])
+  end,
+  [15] = function()
     espeak([[are here?]])
   end,
 })
