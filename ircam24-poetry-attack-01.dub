@@ -157,6 +157,8 @@ d2
 
 xfadeIn 1 32 $ silence
 
+xfadeIn 2 32 $ silence
+
 xfadeIn 3 32
   $ stack [
     slowcat [
