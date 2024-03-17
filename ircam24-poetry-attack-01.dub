@@ -309,6 +309,10 @@ d8
   # lpf 1500 |+ lpf (slow 4 $ palindrome $ range 100 500 $ sine)
   # shape 0.25 |- shape (rand * 0.25)
 
+d9
+  $ sound "pandeiro(5,8)"
+  # n (irand 5)
+
 #!espeak
 
 In another hundred and twenty days the building of the Integral will be completed.
