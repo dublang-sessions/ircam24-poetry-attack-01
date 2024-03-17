@@ -22,7 +22,7 @@ cycle({})
 
 schedule({
   [1] = function()
-    espeak([[how many?]])
+    espeak([[question?]])
   end,
   [5] = function()
     espeak([[how many?]])
