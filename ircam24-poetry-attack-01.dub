@@ -37,6 +37,7 @@ cycle('sm', {
   end,
   function()
     sm([[Attack]])
+mpv([[hue $ h 100 $ s 200]])
   end,
   function()
     sm([[01]])
@@ -58,8 +59,8 @@ mpv([[video "videos-pastinha/1963/06.mp4"]])
 
 nvimqt([[slide('    _  -')]])
 
+mpv([[hue $ h 50 $ s 2000]])
 
-mpv([[hue $ h 100 $ s 200]])
 
 mpv([[clr]])
 
