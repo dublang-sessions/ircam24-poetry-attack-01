@@ -27,9 +27,11 @@ sm([[...:.:]], 'typewrite')
 
 config.path.mpv = "${HOME}/art/videos/videos-12-monkeys"
 
+mpv([[video "10.mp4"]])
+
 config.path.mpv = "${HOME}/art/videos/videos-pastinha"
 
-mpv([[video "10.mp4"]])
+mpv([[video "1950/01.mp4"]])
 
 nvimqt([[slide('    _  -')]])
 
