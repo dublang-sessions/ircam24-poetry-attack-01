@@ -10,7 +10,7 @@ sm([[Poetry Attack 01]], 'typewrite')
 
 config.path.mpv = "${HOME}/art/videos/videos-12-monkeys"
 
-mpv([[video 01.mp4]])
+mpv([[video "01.mp4"]])
 
 length(20000)
 cycle({
