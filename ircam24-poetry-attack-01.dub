@@ -66,19 +66,6 @@ mpv([[hue $ h 1000 $ s 80]])
 mpv([[clr]])
 
 
-#!nvimqt
-
-ascii([[
-   +-----------------+
-   | `.           .` |
-   |   +--------+    |
-   |   |        |    |
-   |   |   ``   |    |
-   |  ,+--------+,   |
-   | .             . |
-   +-----------------+
-]])
-
 
 length(20000)
 cycle({
@@ -117,6 +104,9 @@ schedule({
 fudi([[onoff 1; vol 0.10; freq 720; wave 0; delay 1; time 500; mod 500;]])
 
 fudi([[onoff 0;]])
+
+#!dublang
+|repeat 60
 
 schedule({
   [1] = function()
