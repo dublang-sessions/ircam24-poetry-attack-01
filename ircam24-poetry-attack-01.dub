@@ -8,9 +8,14 @@ obs([[scene.set scene6]])
 
 sm([[Poetry Attack 01]], 'typewrite')
 
-sm([[How?]])
-
-sm([[Many?]])
+cycle({
+  function()
+    sm([[Poetry]])
+  end,
+  function()
+    sm([[Attack]])
+  end,
+})
 
 sm([[...:.:]], 'typewrite')
 
@@ -20,7 +25,9 @@ mpv([[video "04.mp4"]])
 
 nvimqt([[slide('    _  -')]])
 
-nvimqt([[ascii("
+#!nvimqt
+
+ascii([[
    +-----------------+
    | `.           .` |
    |   +--------+    |
@@ -29,7 +36,7 @@ nvimqt([[ascii("
    |  ,+--------+,   |
    | .             . |
    +-----------------+
-")]])
+]])
 
 
 length(20000)
