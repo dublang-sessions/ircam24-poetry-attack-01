@@ -8,7 +8,7 @@ obs([[scene.set scene6]])
 
 sm([[Poetry Attack 01]], 'typewrite')
 
-sm([[How?]], 'typewrite')
+sm([[How many?]], 'typewrite')
 
 config.path.mpv = "${HOME}/art/videos/videos-12-monkeys"
 
