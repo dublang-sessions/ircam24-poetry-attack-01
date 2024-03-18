@@ -29,6 +29,10 @@ mpv([[video "05.mp4"]])
 
 nvimqt([[slide('    _  -')]])
 
+
+mpv([[hue $ h 10 $ s 10]])
+
+
 #!nvimqt
 
 ascii([[
