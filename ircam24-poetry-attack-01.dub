@@ -4,7 +4,7 @@ supercollider([[~dirt.loadSoundFiles("${config.path.sounds}/sounds-berimbau/*")]
 supercollider([[~dirt.loadSoundFiles("${config.path.sounds}/sounds-pandeiro/*")]])
 supercollider([[~dirt.loadSoundFiles("${config.path.sounds}/sounds-mocreo/*")]])
 
-obs([[scene.set scene6]])
+obs([[scene.set s1]])
 
 sm([[Poetry Attack 01]], 'typewrite')
 
