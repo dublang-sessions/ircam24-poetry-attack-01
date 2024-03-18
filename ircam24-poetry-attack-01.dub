@@ -38,6 +38,8 @@ nvimqt([[slide('    _  -')]])
 
 mpv([[hue $ h 500 $ s 400]])
 
+mpv([[clr]])
+
 
 #!nvimqt
 
