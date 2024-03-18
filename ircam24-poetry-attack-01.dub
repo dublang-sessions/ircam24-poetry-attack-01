@@ -37,10 +37,11 @@ cycle('sm', {
   end,
   function()
     sm([[Attack]])
-mpv([[hue $ h 100 $ s 200]])
+    mpv([[hue $ h 100 $ s 200]])
   end,
   function()
     sm([[01]])
+    mpv([[hue $ h 1000 $ s 80]])
   end,
 })
 
