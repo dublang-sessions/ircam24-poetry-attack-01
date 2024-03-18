@@ -12,6 +12,8 @@ sm([[How?]])
 
 sm([[Many?]])
 
+sm([[]])
+
 config.path.mpv = "${HOME}/art/videos/videos-12-monkeys"
 
 mpv([[video "04.mp4"]])
