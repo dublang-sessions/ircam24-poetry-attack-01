@@ -27,7 +27,7 @@ sm([[...:.:]], 'typewrite')
 
 config.path.mpv = "${HOME}/art/videos/videos-12-monkeys"
 
-mpv([[video "03.mp4"]])
+mpv([[video "04.mp4"]])
 
 config.path.mpv = "${HOME}/art/videos/videos-pastinha"
 
