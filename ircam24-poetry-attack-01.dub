@@ -12,6 +12,8 @@ config.path.mpv = "${HOME}/art/videos/videos-12-monkeys"
 
 mpv([[video "04.mp4"]])
 
+nvimqt([[noise('., ')]])
+
 length(20000)
 cycle({
   function()
