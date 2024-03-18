@@ -105,9 +105,6 @@ fudi([[onoff 1; vol 0.10; freq 720; wave 0; delay 1; time 500; mod 500;]])
 
 fudi([[onoff 0;]])
 
-#!dublang
-|repeat 30
-
 schedule({
   [1] = function()
     fudi([[onoff 1; vol 0.15; freq 720; wave 0; delay 1; time 500; mod 500;]])
