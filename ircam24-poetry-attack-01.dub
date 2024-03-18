@@ -38,7 +38,7 @@ mpv([[video "1963/06.mp4"]])
 nvimqt([[slide('    _  -')]])
 
 
-mpv([[hue $ h 500 $ s 500]])
+mpv([[hue $ h 300 $ s 500]])
 
 mpv([[clr]])
 
