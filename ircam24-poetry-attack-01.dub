@@ -59,7 +59,7 @@ mpv([[video "videos-pastinha/1963/06.mp4"]])
 
 nvimqt([[slide('    _  -')]])
 
-mpv([[hue $ h 5000 $ s 2000]])
+mpv([[hue $ h 500 $ s 2000]])
 
 
 mpv([[clr]])
