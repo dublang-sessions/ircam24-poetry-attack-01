@@ -249,6 +249,8 @@ return vim.env.FREQ
 
 #!tidalcycles
 
+hush
+
 d1
   $ fast 2
   $ sometimes (off 0.25 (# up "-8"))
