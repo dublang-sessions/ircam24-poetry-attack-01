@@ -18,8 +18,9 @@ sm([[Poetry Attack 01]], 'typewrite')
 
 cycle('obs', {})
 
-length(3000)
-cycle({
+
+length('mpv', 6000)
+cycle('mpv', {
   function()
     sm([[Poetry]])
     mpv([[video "videos-12-monkeys/04.mp4"]])
