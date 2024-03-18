@@ -33,6 +33,7 @@ length('sm', 9000)
 cycle('sm', {
   function()
     sm([[Poetry]])
+    mpv([[hue $ h 300 $ s 500]])
   end,
   function()
     sm([[Attack]])
@@ -58,7 +59,7 @@ mpv([[video "videos-pastinha/1963/06.mp4"]])
 nvimqt([[slide('    _  -')]])
 
 
-mpv([[hue $ h 300 $ s 500]])
+mpv([[hue $ h 100 $ s 500]])
 
 mpv([[clr]])
 
