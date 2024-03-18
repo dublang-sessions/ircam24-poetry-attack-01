@@ -6,6 +6,8 @@ supercollider([[~dirt.loadSoundFiles("${config.path.sounds}/sounds-mocreo/*")]])
 
 obs([[scene.set s1]])
 
+obs([[scene.set s2]])
+
 sm([[Poetry Attack 01]], 'typewrite')
 
 length(3000)
