@@ -25,15 +25,15 @@ cycle({
 
 sm([[...:.:]], 'typewrite')
 
-config.path.mpv = "${HOME}/art/videos/videos-12-monkeys"
+config.path.mpv = "${HOME}/art/videos"
 
-mpv([[video "04.mp4"]])
+mpv([[video "videos-12-monkeys/04.mp4"]])
 
-config.path.mpv = "${HOME}/art/videos/videos-pastinha"
+config.path.mpv = "${HOME}/art/videos"
 
-mpv([[video "1950/10.mp4"]])
+mpv([[video "videos-pastinha/1950/10.mp4"]])
 
-mpv([[video "1963/06.mp4"]])
+mpv([[video "videos-pastinha/1963/06.mp4"]])
 
 nvimqt([[slide('    _  -')]])
 
