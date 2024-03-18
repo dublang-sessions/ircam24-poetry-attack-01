@@ -46,7 +46,7 @@ cycle('sm', {
 })
 
 
-mpv([[set speed 0.2]])
+mpv([[set speed 0.5]])
 
 sm([[...:.:]], 'typewrite')
 
