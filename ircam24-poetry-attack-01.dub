@@ -16,6 +16,8 @@ cycle('obs', {
 
 sm([[Poetry Attack 01]], 'typewrite')
 
+cycle({})
+
 length(3000)
 cycle({
   function()
