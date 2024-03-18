@@ -30,7 +30,7 @@ mpv([[video "05.mp4"]])
 nvimqt([[slide('    _  -')]])
 
 
-mpv([[hue $ h 10 $ s 1]])
+mpv([[hue $ h 1 $ s 1]])
 
 
 #!nvimqt
