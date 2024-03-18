@@ -14,24 +14,31 @@ cycle('obs', {
   end,
 })
 
-sm([[Poetry Attack 01]], 'typewrite')
-
 cycle('obs', {})
-
 
 length('mpv', 6000)
 cycle('mpv', {
   function()
-    sm([[Poetry]])
     mpv([[video "videos-12-monkeys/04.mp4"]])
   end,
   function()
-    sm([[Attack]])
     mpv([[video "videos-pastinha/1950/10.mp4"]])
   end,
   function()
-    sm([[01]])
     mpv([[video "videos-pastinha/1963/06.mp4"]])
+  end,
+})
+
+length('sm', 9000)
+cycle('sm', {
+  function()
+    sm([[Poetry]])
+  end,
+  function()
+    sm([[Attack]])
+  end,
+  function()
+    sm([[01]])
   end,
 })
 
