@@ -8,12 +8,16 @@ obs([[scene.set scene6]])
 
 sm([[Poetry Attack 01]], 'typewrite')
 
+length(3000)
 cycle({
   function()
     sm([[Poetry]])
   end,
   function()
     sm([[Attack]])
+  end,
+  function()
+    sm([[01]])
   end,
 })
 
