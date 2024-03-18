@@ -33,7 +33,7 @@ config.path.mpv = "${HOME}/art/videos/videos-pastinha"
 
 mpv([[video "1950/16.mp4"]])
 
-mpv([[video "1963/04.mp4"]])
+mpv([[video "1963/05.mp4"]])
 
 nvimqt([[slide('    _  -')]])
 
