@@ -196,17 +196,20 @@ length('sm', 9000)
 cycle('sm', {
   function()
     sm([[Poetry]])
-    mpv([[hue $ h 300 $ s 500]])
   end,
   function()
     sm([[Attack]])
-    mpv([[hue $ h 100 $ s 200]])
   end,
   function()
     sm([[01]])
-    mpv([[hue $ h 1000 $ s 80]])
   end,
 })
+
+
+    mpv([[hue $ h 1000 $ s 80]])
+    mpv([[hue $ h 100 $ s 200]])
+
+mpv([[hue $ h 300 $ s 500]])
 
 
 mpv([[set speed 0.5]])
