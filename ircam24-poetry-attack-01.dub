@@ -330,6 +330,7 @@ schedule({
   end,
   [15] = function()
     fudi([[freq 2; vol 0.25;]])
+    sm([[|...|---|+++|...| | |----|........|]], 'typewrite')
   end,
   [16] = function()
     fudi([[freq 4; vol 0.30;]])
