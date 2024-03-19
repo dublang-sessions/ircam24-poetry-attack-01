@@ -99,6 +99,12 @@ hooks('tidalcycles', {
     }
     mpv(string.format([[vf add "@chop:shuffleframes:%s"]], map[chop]))
   end,
+  function(plugin, block)
+    if block:match("bass2") then
+      local seed = math.random(3) - 1
+      video = value + seed
+    end
+  end,
   -- hook to control video shufflepixels from squiz tidal function
   --function(plugin, block)
   --  -- parse tidal code # squiz <n>
@@ -220,6 +226,7 @@ cycle('sm', {
 
 mpv([[hue $ h 200 $ s 13]])
 
+mpv([[scroll 0 1]])
 
 mpv([[set speed 0.5]])
 
