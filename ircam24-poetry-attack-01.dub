@@ -305,6 +305,7 @@ schedule({
   [3] = function()
     fudi([[onoff 1; vol 0.20; freq 440; wave 0; delay 1; time 250;]])
     mpv([[colort $ tem 1000 $ mix 0.6 $ pl 0.5]])
+    sm([[..............]], 'typewrite')
   end,
   [4] = function()
     fudi([[onoff 1; vol 0.21; freq 430; wave 0; delay 1; time 550;]])
@@ -317,6 +318,7 @@ schedule({
   [6] = function()
     fudi([[onoff 1; vol 0.21; freq 140; wave 3; delay 1; time 200; mod 150;]])
     mpv([[colort $ tem 1000 $ mix 0.9 $ pl 0.5]])
+    sm([[____...-....-....-...------]], 'typewrite')
   end,
   [9] = function()
     fudi([[onoff 1; vol 0.20; freq 440; wave 1; delay 0;]])
