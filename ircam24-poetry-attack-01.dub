@@ -226,7 +226,7 @@ cycle('sm', {
 
 mpv([[hue $ h 200 $ s 13]])
 
-mpv([[scroll 0.1 0.1]])
+mpv([[scroll 0.01 0.01]])
 
 mpv([[set speed 0.5]])
 
