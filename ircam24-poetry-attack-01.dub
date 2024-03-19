@@ -108,6 +108,8 @@ hooks('tidalcycles', {
     end
     if block:match("superpiano") then
       nvimqt([[noise(' - _ ')]])
+    elseif block:match("pandeiro") then
+      nvimqt([[noise('  *    ')]])
     else
       nvimqt([[fill(' - _ ')]])
     end
@@ -219,7 +221,6 @@ mpv([[video "videos-pastinha/1950/10.mp4"]])
 
 mpv([[video "videos-pastinha/1963/06.mp4"]])
 
-nvimqt([[noise('  *    ')]])
 
 nvimqt([[fill(' -')]])
 
