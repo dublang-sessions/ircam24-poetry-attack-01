@@ -7,7 +7,7 @@ supercollider([[~dirt.loadSoundFiles("${config.path.sounds}/sounds-berimbau/*")]
 supercollider([[~dirt.loadSoundFiles("${config.path.sounds}/sounds-pandeiro/*")]])
 supercollider([[~dirt.loadSoundFiles("${config.path.sounds}/sounds-mocreo/*")]])
 
-mpv([[video "videos-pastinha/1950/16.mp4" 0%]])
+mpv([[video "videos-pastinha/1950/16.mp4" ]])
 
 
 dirs = {
