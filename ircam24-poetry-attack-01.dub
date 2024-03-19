@@ -275,9 +275,11 @@ mpv([[amp $ fac 20 $ low 500 $ thr 300]])
 schedule({
   [1] = function()
     fudi([[onoff 1; vol 0.10; freq 220; wave 0; delay 1; time 1000; mod 220;]])
-    fudi([[onoff 1; vol 0.10; freq 220; wave 0; delay 1; time 1000; mod 320;]])
   end,
   [2] = function()
+    fudi([[onoff 1; vol 0.10; freq 220; wave 0; delay 1; time 1000; mod 320;]])
+  end,
+  [3] = function()
     fudi([[onoff 0;]])
   end,
 })
