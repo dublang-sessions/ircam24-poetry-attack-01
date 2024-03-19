@@ -49,7 +49,8 @@ hooks('tidalcycles', {
     local video = 0
     for k, value in pairs(map) do
       if block:match(k) then
-        video = value
+        local seed = math.random(3) - 1
+        video = value + seed
       end
     end
     if video > 0 then
