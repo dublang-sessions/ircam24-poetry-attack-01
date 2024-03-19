@@ -747,3 +747,7 @@ send /home/joenio/art/sounds/synths-puredata/oscillator/sawtooth.pd freq 46
 send /home/joenio/art/sounds/synths-puredata/oscillator/sawtooth.pd vol 0.5
 
 close /home/joenio/art/sounds/synths-puredata/oscillator/sawtooth.pd
+
+#!sm
+
+thank you
