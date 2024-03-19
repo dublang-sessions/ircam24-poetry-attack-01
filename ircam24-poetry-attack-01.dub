@@ -272,6 +272,8 @@ hooks('fudi', {
   end,
 })
 
+mpv([[colort $ tem 1000 $ mix 0.8 $ pl 0.5]])
+
 fudi([[onoff 1; vol 0.10; freq 720; wave 0; delay 1; time 500; mod 500;]])
 
 fudi([[onoff 0;]])
@@ -342,15 +344,15 @@ schedule({
     fudi([[onoff 1; vol 0.22; freq 240; wave 1; delay 0; time 80; mod 100;]])
   end,
   [7] = function()
-    mpv([[eq $ con 4]])
     fudi([[onoff 1; vol 0.21; freq 145; wave 3; delay 1; time 20; mod 90;]])
+    mpv([[eq $ con 4]])
   end,
   [8] = function()
     fudi([[onoff 1; vol 0.21; freq 250; wave 2; delay 1; time 1000; mod 80;]])
   end,
   [9] = function()
-    mpv([[eq $ con 5]])
     fudi([[onoff 1; vol 0.21; freq 255; wave 3; delay 0; time 200; mod 70;]])
+    mpv([[eq $ con 5]])
   end,
   [10] = function()
     fudi([[onoff 0;]])
