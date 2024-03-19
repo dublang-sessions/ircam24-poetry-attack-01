@@ -187,6 +187,8 @@ cycle('mpv', {
   end,
 })
 
+cycle('mpv', {})
+
 length('sm', 9000)
 cycle('sm', {
   function()
