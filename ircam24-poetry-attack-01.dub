@@ -60,9 +60,9 @@ hooks('tidalcycles', {
       end
     else
       obs([[scene.set s1]])
+      mpv([[clr]])
       mpv(string.format([[video "%s/%02d.mp4" %s%%]], dirs[math.random(#dirs)], 16, begin))
       vim.notify(string.format([[video "%s/%02d.mp4" %s%%]], dirs[math.random(#dirs)], 16, begin))
-      mpv([[clr]])
       playing = nil
     end
   end,
@@ -100,41 +100,41 @@ hooks('tidalcycles', {
     mpv(string.format([[vf add "@chop:shuffleframes:%s"]], map[chop]))
   end,
   -- hook to control video shufflepixels from squiz tidal function
-  function(plugin, block)
-    -- parse tidal code # squiz <n>
-    local squiz = block:match("# squiz (%d+%.?%d*)")
-    if not squiz then
-      squiz = 0
-    end
-    squiz = tonumber(squiz)
-    local width = 608
-    local height = 320
-    local size = string.format("w=%s:h=%s", width, height)
-    if squiz > 0 and squiz < 0.1 then
-      size = string.format("w=%s:h=%s", width, height)
-    elseif squiz >= 0.1 and squiz < 0.2 then
-      size = string.format("w=%s:h=%s", width / 2, height / 2)
-    elseif squiz >= 0.2 and squiz < 0.3 then
-      size = string.format("w=%s:h=%s", width / 4, height / 4)
-    elseif squiz >= 0.3 and squiz < 0.4 then
-      size = string.format("w=%s:h=%s", width / 6, height / 6)
-    elseif squiz >= 0.4 and squiz < 0.5 then
-      size = string.format("w=%s:h=%s", width / 8, height / 8)
-    elseif squiz >= 0.5 and squiz < 0.6 then
-      size = string.format("w=%s:h=%s", width / 10, height / 10)
-    elseif squiz > 1 then
-      size = string.format("w=%s:h=%s", width / 20, height / 20)
-    --elseif squiz < 0.7 then
-    --  size = string.format("w=%s:h=%s", width / 7, height / 7)
-    --elseif squiz < 0.8 then
-    --  size = string.format("w=%s:h=%s", width / 8, height / 8)
-    --elseif squiz < 0.9 then
-    --  size = string.format("w=%s:h=%s", width / 9, height / 9)
-    --elseif squiz >= 0.9 then
-    --  size = string.format("w=%s:h=%s", width / 10, height / 10)
-    end
-    mpv(string.format([[vf add "@squiz:shufflepixels:mode=block:%s:seed=1"]], size))
-  end,
+  --function(plugin, block)
+  --  -- parse tidal code # squiz <n>
+  --  local squiz = block:match("# squiz (%d+%.?%d*)")
+  --  if not squiz then
+  --    squiz = 0
+  --  end
+  --  squiz = tonumber(squiz)
+  --  local width = 608
+  --  local height = 320
+  --  local size = string.format("w=%s:h=%s", width, height)
+  --  if squiz > 0 and squiz < 0.1 then
+  --    size = string.format("w=%s:h=%s", width, height)
+  --  elseif squiz >= 0.1 and squiz < 0.2 then
+  --    size = string.format("w=%s:h=%s", width / 2, height / 2)
+  --  elseif squiz >= 0.2 and squiz < 0.3 then
+  --    size = string.format("w=%s:h=%s", width / 4, height / 4)
+  --  elseif squiz >= 0.3 and squiz < 0.4 then
+  --    size = string.format("w=%s:h=%s", width / 6, height / 6)
+  --  elseif squiz >= 0.4 and squiz < 0.5 then
+  --    size = string.format("w=%s:h=%s", width / 8, height / 8)
+  --  elseif squiz >= 0.5 and squiz < 0.6 then
+  --    size = string.format("w=%s:h=%s", width / 10, height / 10)
+  --  elseif squiz > 1 then
+  --    size = string.format("w=%s:h=%s", width / 20, height / 20)
+  --  --elseif squiz < 0.7 then
+  --  --  size = string.format("w=%s:h=%s", width / 7, height / 7)
+  --  --elseif squiz < 0.8 then
+  --  --  size = string.format("w=%s:h=%s", width / 8, height / 8)
+  --  --elseif squiz < 0.9 then
+  --  --  size = string.format("w=%s:h=%s", width / 9, height / 9)
+  --  --elseif squiz >= 0.9 then
+  --  --  size = string.format("w=%s:h=%s", width / 10, height / 10)
+  --  end
+  --  mpv(string.format([[vf add "@squiz:shufflepixels:mode=block:%s:seed=1"]], size))
+  --end,
 })
 
 hooks('espeak', {
