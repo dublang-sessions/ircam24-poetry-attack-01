@@ -108,6 +108,8 @@ hooks('tidalcycles', {
     end
     if block:match("superpiano") then
       nvimqt([[noise(' - _ ')]])
+    else
+      nvimqt([[fill(' - _ ')]])
     end
   end,
   -- hook to control video shufflepixels from squiz tidal function
