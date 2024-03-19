@@ -209,7 +209,7 @@ cycle('sm', {
     mpv([[hue $ h 1000 $ s 80]])
     mpv([[hue $ h 100 $ s 200]])
 
-mpv([[hue $ h 3 $ s 12]])
+mpv([[hue $ h 4 $ s 12]])
 
 
 mpv([[set speed 0.5]])
