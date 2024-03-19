@@ -48,15 +48,11 @@ hooks('tidalcycles', {
     end
     if video > 0 then
       if video ~= playing then
-
-
-
-
-        mpv(string.format([[video "%02d.mp4" %s%%]], video, begin))
+        mpv(string.format([[video "%s/%02d.mp4" %s%%]], dirs[math.random(#dirs)], video, begin))
         playing = video
       end
     else
-      mpv(string.format([[video "%02d.mp4" %s%%]], 1, begin))
+      mpv(string.format([[video "%s/%02d.mp4" %s%%]], dirs[math.random(#dirs)], 1, begin))
       mpv([[clr]])
       playing = nil
     end
@@ -131,6 +127,7 @@ hooks('tidalcycles', {
     mpv(string.format([[vf add "@squiz:shufflepixels:mode=block:%s:seed=1"]], size))
   end,
 })
+
 hooks('espeak', {
   function(plugin, block)
     -- map sound name to video number
@@ -406,6 +403,10 @@ Synth(\superpwm, [
 vim.env.FREQ = math.random(460)
 vim.env.SUSTAIN = math.random(8)
 return vim.env.FREQ
+
+#!tidalcycles
+
+d1 $ sound "bd"
 
 #!tidalcycles
 
