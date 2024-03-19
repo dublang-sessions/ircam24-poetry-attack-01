@@ -338,20 +338,19 @@ schedule({
   end,
   [17] = function()
     fudi([[freq 6; vol 0.32;]])
+    sm([[ircam forum workshops 2024, poetry attack 01]], 'typewrite')
   end,
   [18] = function()
     fudi([[onoff 0;]])
     mpv([[colort $ tem 100 $ mix 0.99 $ pl 0.99]])
   end,
   [25] = function()
-    sm([[ircam forum workshops 2024, poetry attack 01: how many black people are here?]], 'typewrite')
     mpv([[clr]])
+    sm([[how many black people are here?]], 'typewrite')
   end,
 })
 
-    sm([[ircam forum workshops 2024, poetry attack 01]], 'typewrite')
 
-    sm([[how many black people are here?]], 'typewrite')
 
 #!dublang
 
