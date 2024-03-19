@@ -328,16 +328,20 @@ schedule({
   end,
   [15] = function()
     fudi([[freq 2; vol 0.25;]])
-    mpv([[clr]])
   end,
   [16] = function()
     fudi([[freq 4; vol 0.30;]])
+    mpv([[colort $ tem 2000 $ mix 0.9 $ pl 0.8]])
   end,
   [17] = function()
     fudi([[freq 6; vol 0.32;]])
   end,
   [18] = function()
     fudi([[onoff 0;]])
+    mpv([[colort $ tem 2500 $ mix 0.9 $ pl 0.8]])
+  end,
+  [25] = function()
+    mpv([[clr]])
   end,
 })
 
