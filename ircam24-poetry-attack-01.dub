@@ -464,6 +464,8 @@ return vim.env.FREQ
 
 d1 $ sound "bd"
 
+hush
+
 #!tidalcycles
 
 hush
