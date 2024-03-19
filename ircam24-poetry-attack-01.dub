@@ -322,29 +322,34 @@ schedule({
 schedule({
   [1] = function()
     fudi([[onoff 1; vol 0.20; freq 220; wave 0; delay 1; time 200; mod 100;]])
+    mpv([[eq $ con 1]])
   end,
   [2] = function()
     fudi([[onoff 1; vol 0.15; freq 225; wave 1; delay 0; time 300; mod 110;]])
   end,
   [3] = function()
     fudi([[onoff 1; vol 0.20; freq 230; wave 0; delay 1; time 100; mod 120;]])
+    mpv([[eq $ con 2]])
   end,
   [4] = function()
     fudi([[onoff 1; vol 0.21; freq 235; wave 2; delay 1; time 500; mod 110;]])
   end,
   [5] = function()
     fudi([[onoff 0;]])
+    mpv([[eq $ con 3]])
   end,
   [6] = function()
     fudi([[onoff 1; vol 0.22; freq 240; wave 1; delay 0; time 80; mod 100;]])
   end,
   [7] = function()
+    mpv([[eq $ con 4]])
     fudi([[onoff 1; vol 0.21; freq 145; wave 3; delay 1; time 20; mod 90;]])
   end,
   [8] = function()
     fudi([[onoff 1; vol 0.21; freq 250; wave 2; delay 1; time 1000; mod 80;]])
   end,
   [9] = function()
+    mpv([[eq $ con 5]])
     fudi([[onoff 1; vol 0.21; freq 255; wave 3; delay 0; time 200; mod 70;]])
   end,
   [10] = function()
