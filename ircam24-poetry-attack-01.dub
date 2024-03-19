@@ -337,6 +337,7 @@ schedule({
   [5] = function()
     fudi([[onoff 0;]])
     mpv([[eq $ con 3]])
+    mpv([[seek 0.5]])
   end,
   [6] = function()
     fudi([[onoff 1; vol 0.22; freq 240; wave 1; delay 0; time 80; mod 100;]])
