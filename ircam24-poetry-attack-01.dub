@@ -102,7 +102,7 @@ hooks('tidalcycles', {
   function(plugin, block)
     if block:match("bass2") then
       local thr = math.random(2000)
-      mpv(string.format([[amp $ fac 2000 $ low 5000 $ thr %d]], thr))
+      mpv(string.format([[amp $ fac 1000 $ low 1000 $ thr %d]], thr))
     end
   end,
   -- hook to control video shufflepixels from squiz tidal function
