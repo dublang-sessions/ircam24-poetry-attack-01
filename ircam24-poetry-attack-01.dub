@@ -297,6 +297,7 @@ schedule({
   [1] = function()
     fudi([[onoff 1; vol 0.15; freq 720; wave 0; delay 1; time 500; mod 500;]])
     mpv([[colort $ tem 1000 $ mix 0.4 $ pl 0.5]])
+    sm([[____...-....-....-...------]], 'typewrite')
   end,
   [2] = function()
     fudi([[onoff 1; vol 0.15; freq 730; wave 0; delay 1; time 500; mod 500;]])
@@ -305,7 +306,6 @@ schedule({
   [3] = function()
     fudi([[onoff 1; vol 0.20; freq 440; wave 0; delay 1; time 250;]])
     mpv([[colort $ tem 1000 $ mix 0.6 $ pl 0.5]])
-    sm([[..............]], 'typewrite')
   end,
   [4] = function()
     fudi([[onoff 1; vol 0.21; freq 430; wave 0; delay 1; time 550;]])
@@ -318,7 +318,6 @@ schedule({
   [6] = function()
     fudi([[onoff 1; vol 0.21; freq 140; wave 3; delay 1; time 200; mod 150;]])
     mpv([[colort $ tem 1000 $ mix 0.9 $ pl 0.5]])
-    sm([[____...-....-....-...------]], 'typewrite')
   end,
   [9] = function()
     fudi([[onoff 1; vol 0.20; freq 440; wave 1; delay 0;]])
@@ -327,10 +326,10 @@ schedule({
   [12] = function()
     fudi([[onoff 1; vol 0.20; freq 440; wave 2; delay 1;]])
     mpv([[colort $ tem 1500 $ mix 0.9 $ pl 0.7]])
+    sm([[|...|---|+++|...| | |----|........|]], 'typewrite')
   end,
   [15] = function()
     fudi([[freq 2; vol 0.25;]])
-    sm([[|...|---|+++|...| | |----|........|]], 'typewrite')
   end,
   [16] = function()
     fudi([[freq 4; vol 0.30;]])
@@ -338,13 +337,15 @@ schedule({
   end,
   [17] = function()
     fudi([[freq 6; vol 0.32;]])
-    sm([[ircam forum workshops 2024, poetry attack 01]], 'typewrite')
   end,
   [18] = function()
     fudi([[onoff 0;]])
     mpv([[colort $ tem 100 $ mix 0.99 $ pl 0.99]])
   end,
-  [25] = function()
+  [20] = function()
+    sm([[ircam forum workshops 2024, poetry attack 01]], 'typewrite')
+  end,
+  [30] = function()
     mpv([[clr]])
     sm([[how many black people are here?]], 'typewrite')
   end,
