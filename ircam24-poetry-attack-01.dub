@@ -718,7 +718,7 @@ onoff 1; freq 440; wave 2;
 
 freq 2;
 
-onoff 1; freq 120; wave 1; delay 1; time 1000;
+onoff 1; freq 120; wave 0; delay 1; time 1000;
 
 onoff 0;
 
