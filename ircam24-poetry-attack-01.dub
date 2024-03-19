@@ -216,6 +216,8 @@ mpv([[video "videos-pastinha/1963/06.mp4"]])
 
 nvimqt([[noise('    _  -')]])
 
+nvimqt([[fill('    _  -')]])
+
 mpv([[hue $ h 1000 $ s 80]])
 
 mpv([[eq $ con 6]])
