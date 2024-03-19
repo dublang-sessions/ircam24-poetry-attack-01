@@ -272,7 +272,7 @@ mpv([[edge $ mod canny]])
 
 mpv([[amp $ fac 20 $ low 500 $ thr 300]])
 
-fudi([[onoff 1; vol 0.10; freq 720; wave 1; delay 1; time 500; mod 500;]])
+fudi([[onoff 1; vol 0.10; freq 720; wave 2; delay 1; time 500; mod 500;]])
 
 fudi([[onoff 0;]])
 
