@@ -262,11 +262,11 @@ schedule({
   end,
   [10] = function()
     espeak([[black people?]])
-    mpv([[pixels $ mod block $ wid 100 $ hei 100 $ seed 2]])
+    mpv([[pixels $ mod block $ wid 50 $ hei 50 $ seed 1]])
   end,
   [15] = function()
     espeak([[are here?]])
-    mpv([[pixels $ mod block $ wid 50 $ hei 50 $ seed 1]])
+    mpv([[pixels $ mod block $ wid 25 $ hei 25 $ seed 1]])
   end,
 })
 
