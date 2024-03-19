@@ -1,9 +1,17 @@
 #!dublang
 
+-- videos $n = 01 .. 16
+
 config.path.mpv = "${HOME}/art/videos"
 supercollider([[~dirt.loadSoundFiles("${config.path.sounds}/sounds-berimbau/*")]])
 supercollider([[~dirt.loadSoundFiles("${config.path.sounds}/sounds-pandeiro/*")]])
 supercollider([[~dirt.loadSoundFiles("${config.path.sounds}/sounds-mocreo/*")]])
+
+dirs = {
+  "videos-12-monkeys/",
+  "videos-pastinha/1950/",
+  "videos-pastinha/1963/",
+}
 
 hooks('tidalcycles', {
   -- hook function for tidalcycles
@@ -17,16 +25,17 @@ hooks('tidalcycles', {
     local begin = begin * 100
     -- map sound name to video number
     local map = {
-      questions = 1,
       bd = 2,
-      mocreo = 3,
-      bass2 = 4,
-      enduro = 5,
-      megamania = 7,
-      cp = 9,
-      riverraid = 11,
-      pacman = 13,
-      hh = 15
+      mocreo = 4,
+      bass2 = 6,
+      superpiano = 8,
+      supersiren = 9,
+      cp = 7,
+      jazz = 5,
+      hh27 = 3,
+      hh = 10,
+      pandeiro = 11,
+      berimbau = 12,
     }
     -- parse tidal code block
     local video = 0
@@ -37,6 +46,10 @@ hooks('tidalcycles', {
     end
     if video > 0 then
       if video ~= playing then
+
+
+
+
         mpv(string.format([[video "%02d.mp4" %s%%]], video, begin))
         playing = video
       end
@@ -77,7 +90,6 @@ hooks('tidalcycles', {
       [10] = "8 6 3 0 2 5 1 7 3",
       [11] = "0 6 8 4 2 9 1 7 0 0",
     }
-    vim.notify(string.format([[vf add "@chop:shuffleframes:%s"]], map[chop]))
     mpv(string.format([[vf add "@chop:shuffleframes:%s"]], map[chop]))
   end,
   -- hook to control video shufflepixels from squiz tidal function
@@ -121,14 +133,14 @@ hooks('espeak', {
   function(plugin, block)
     -- map sound name to video number
     local map = {
-      questions = 4,
-      answers = 8,
-      how = 12,
-      black = 6,
-      blue = 9,
+      questions = 16,
+      answers = 14,
+      how = 15,
+      black = 13,
+      blue = 12,
       red = 11,
     }
-    -- parse tidal code block
+    -- parse espeak code block
     local video = 0
     for k, value in pairs(map) do
       if block:match(k) then
