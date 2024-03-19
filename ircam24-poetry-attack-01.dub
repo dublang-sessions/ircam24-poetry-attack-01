@@ -179,33 +179,6 @@ hooks('espeak', {
   end,
 })
 
-length('obs', 20000)
-cycle('obs', {
-  function()
-    obs([[scene.set s1]])
-  end,
-  function()
-    obs([[scene.set s2]])
-  end,
-})
-
-cycle('obs', {})
-
-
-length('mpv', 12000)
-cycle('mpv', {
-  function()
-    mpv([[video "videos-12-monkeys/04.mp4"]])
-  end,
-  function()
-    mpv([[video "videos-pastinha/1950/10.mp4"]])
-  end,
-  function()
-    mpv([[video "videos-pastinha/1963/06.mp4"]])
-  end,
-})
-
-cycle('mpv', {})
 
 mpv([[clear]])
 
