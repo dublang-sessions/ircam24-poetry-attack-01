@@ -14,11 +14,8 @@ mpv([[video "videos-pastinha/1963/16.mp4"]])
 mpv([[clr]])
 
 
-dirs = {
-  "videos-12-monkeys",
-  "videos-pastinha/1950",
-  "videos-pastinha/1963",
-}
+dirs = { "videos-12-monkeys", "videos-pastinha/1950", "videos-pastinha/1963" }
+scenes = { "s1", "s2", "s3" }
 
 return dirs[math.random(#dirs)]
 
