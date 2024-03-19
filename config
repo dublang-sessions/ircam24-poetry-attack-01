@@ -1,5 +1,5 @@
 # dublang config (0.6.0-0)
 
-PLUGINS="git supercollider tidalcycles espeak fudi"
+PLUGINS="git supercollider tidalcycles espeak fudi mpv sm obs nvimqt"
 
 # vim: ft=config
