@@ -52,6 +52,7 @@ hooks('tidalcycles', {
         playing = video
       end
     else
+      obs([[scene.set s1]])
       mpv(string.format([[video "%s/%02d.mp4" %s%%]], dirs[math.random(#dirs)], 1, begin))
       mpv([[clr]])
       playing = nil
