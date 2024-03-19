@@ -254,15 +254,19 @@ cycle({})
 schedule({
   [1] = function()
     espeak([[question?]])
+    mpv([[pixels $ mod block $ wid 200 $ hei 200 $ seed 1]])
   end,
   [5] = function()
     espeak([[how many?]])
+    mpv([[pixels $ mod block $ wid 100 $ hei 100 $ seed 1]])
   end,
   [10] = function()
     espeak([[black people?]])
+    mpv([[pixels $ mod block $ wid 100 $ hei 100 $ seed 2]])
   end,
   [15] = function()
     espeak([[are here?]])
+    mpv([[pixels $ mod block $ wid 50 $ hei 50 $ seed 1]])
   end,
 })
 
@@ -272,7 +276,6 @@ hooks('fudi', {
   end,
 })
 
-mpv([[pixels $ mod block $ wid 100 $ hei 100 $ seed 14]])
 
 fudi([[onoff 1; vol 0.10; freq 720; wave 0; delay 1; time 500; mod 500;]])
 
