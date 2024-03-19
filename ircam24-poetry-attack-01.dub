@@ -13,6 +13,8 @@ dirs = {
   "videos-pastinha/1963/",
 }
 
+return math.random(3)
+
 hooks('tidalcycles', {
   -- hook function for tidalcycles
   -- hook to control video playback
