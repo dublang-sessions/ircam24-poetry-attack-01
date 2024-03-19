@@ -277,7 +277,7 @@ mpv([[clr]])
 
 mpv([[edge $ mod canny]])
 
-mpv([[amp $ tol 1 $ rad 4 $ fac 45 $ low 1 $ tol 0 $ thr 10]])
+mpv([[amp $ tol 1 $ rad 4 $ fac 45 $ low 0 $ tol 0 $ thr 10]])
 
 hooks('fudi', {
   function()
