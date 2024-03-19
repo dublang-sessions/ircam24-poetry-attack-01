@@ -101,7 +101,7 @@ hooks('tidalcycles', {
   end,
   function(plugin, block)
     if block:match("bass2") then
-      local thr = math.random(10000)
+      local thr = math.random(2000)
       mpv(string.format([[amp $ fac 2000 $ low 5000 $ thr %d]], thr))
     end
   end,
