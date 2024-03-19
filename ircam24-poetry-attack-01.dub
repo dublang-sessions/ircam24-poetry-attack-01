@@ -19,6 +19,8 @@ scenes = { "s1", "s2", "s3" }
 
 return dirs[math.random(#dirs)]
 
+return scenes[math.random(#scenes)]
+
 hooks('tidalcycles', {
   -- hook function for tidalcycles
   -- hook to control video playback
