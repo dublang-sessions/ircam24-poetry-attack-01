@@ -268,7 +268,12 @@ schedule({
     espeak([[are here?]])
     mpv([[pixels $ mod block $ wid 25 $ hei 25 $ seed 1]])
   end,
+  [20] = function()
+    mpv([[clr]])
+  end,
 })
+
+    mpv([[clr]])
 
 hooks('fudi', {
   function()
