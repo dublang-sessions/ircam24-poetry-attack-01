@@ -275,6 +275,8 @@ schedule({
 
     mpv([[clr]])
 
+mpv([[edge $ mod canny]])
+
 hooks('fudi', {
   function()
     vim.notify('fudi hook executed!')
