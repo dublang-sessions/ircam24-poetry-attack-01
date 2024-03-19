@@ -283,28 +283,28 @@ schedule({
 
 schedule({
   [1] = function()
-    fudi([[onoff 1; vol 0.15; freq 720; wave 0; delay 1; time 500; mod 500;]])
+    fudi([[onoff 1; vol 0.15; freq 720; wave 0; delay 0; time 500; mod 500;]])
     mpv([[colort $ tem 1000 $ mix 0.4 $ pl 0.5]])
     sm([[____...-....-....-...------]], 'typewrite')
   end,
   [2] = function()
-    fudi([[onoff 1; vol 0.15; freq 730; wave 0; delay 1; time 500; mod 500;]])
+    fudi([[onoff 1; vol 0.15; freq 730; wave 0; delay 0; time 500; mod 500;]])
     mpv([[colort $ tem 1000 $ mix 0.5 $ pl 0.5]])
   end,
   [3] = function()
-    fudi([[onoff 1; vol 0.20; freq 440; wave 0; delay 1; time 250;]])
+    fudi([[onoff 1; vol 0.20; freq 440; wave 0; delay 0; time 250;]])
     mpv([[colort $ tem 1000 $ mix 0.6 $ pl 0.5]])
   end,
   [4] = function()
-    fudi([[onoff 1; vol 0.21; freq 430; wave 0; delay 1; time 550;]])
+    fudi([[onoff 1; vol 0.21; freq 430; wave 0; delay 0; time 550;]])
     mpv([[colort $ tem 1000 $ mix 0.7 $ pl 0.5]])
   end,
   [5] = function()
-    fudi([[onoff 1; vol 0.22; freq 440; wave 1; delay 1; time 650;]])
+    fudi([[onoff 1; vol 0.22; freq 440; wave 1; delay 0; time 650;]])
     mpv([[colort $ tem 1000 $ mix 0.8 $ pl 0.5]])
   end,
   [6] = function()
-    fudi([[onoff 1; vol 0.21; freq 140; wave 3; delay 1; time 200; mod 150;]])
+    fudi([[onoff 1; vol 0.21; freq 140; wave 3; delay 0; time 200; mod 150;]])
     mpv([[colort $ tem 1000 $ mix 0.9 $ pl 0.5]])
   end,
   [9] = function()
