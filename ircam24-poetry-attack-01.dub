@@ -13,7 +13,7 @@ dirs = {
   "videos-pastinha/1963/",
 }
 
-return math.random(#dirs)
+return dirs[math.random(#dirs)]
 
 hooks('tidalcycles', {
   -- hook function for tidalcycles
