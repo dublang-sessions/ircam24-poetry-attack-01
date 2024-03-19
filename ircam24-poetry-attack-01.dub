@@ -9,7 +9,7 @@ supercollider([[~dirt.loadSoundFiles("${config.path.sounds}/sounds-mocreo/*")]])
 
 mpv([[video "videos-pastinha/1950/16.mp4" 5%]])
 
-mpv([[video "videos-pastinha/1963/16.mp4" 5%]])
+mpv([[video "videos-pastinha/1963/16.mp4"]])
 
 
 dirs = {
