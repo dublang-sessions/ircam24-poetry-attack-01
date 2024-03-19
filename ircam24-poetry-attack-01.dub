@@ -175,7 +175,7 @@ cycle('obs', {
 cycle('obs', {})
 
 
-length('mpv', 6000)
+length('mpv', 12000)
 cycle('mpv', {
   function()
     mpv([[video "videos-12-monkeys/04.mp4"]])
