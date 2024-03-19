@@ -463,6 +463,8 @@ d1
 
 xfadeIn 1 32 $ silence
 
+d1 $ sound "hoover?" # n (irand 8)
+
 d1
   $ sometimes (stut 8 0.5 0.25)
   $ often (# vowel "[a|u|i]")
