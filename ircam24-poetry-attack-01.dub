@@ -8,9 +8,9 @@ supercollider([[~dirt.loadSoundFiles("${config.path.sounds}/sounds-pandeiro/*")]
 supercollider([[~dirt.loadSoundFiles("${config.path.sounds}/sounds-mocreo/*")]])
 
 dirs = {
-  "videos-12-monkeys/",
-  "videos-pastinha/1950/",
-  "videos-pastinha/1963/",
+  "videos-12-monkeys",
+  "videos-pastinha/1950",
+  "videos-pastinha/1963",
 }
 
 return dirs[math.random(#dirs)]
