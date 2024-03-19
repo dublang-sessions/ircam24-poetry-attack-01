@@ -1,8 +1,155 @@
 #!dublang
 
+config.path.mpv = "${HOME}/art/videos"
 supercollider([[~dirt.loadSoundFiles("${config.path.sounds}/sounds-berimbau/*")]])
 supercollider([[~dirt.loadSoundFiles("${config.path.sounds}/sounds-pandeiro/*")]])
 supercollider([[~dirt.loadSoundFiles("${config.path.sounds}/sounds-mocreo/*")]])
+
+hooks('tidalcycles', {
+  -- hook function for tidalcycles
+  -- hook to control video playback
+  function(plugin, block)
+    -- parse tidal code # begin <n>
+    local begin = block:match("# begin (%d+%.?%d*)")
+    if not begin then
+      begin = 0
+    end
+    local begin = begin * 100
+    -- map sound name to video number
+    local map = {
+      questions = 1,
+      bd = 2,
+      mocreo = 3,
+      bass2 = 4,
+      enduro = 5,
+      megamania = 7,
+      cp = 9,
+      riverraid = 11,
+      pacman = 13,
+      hh = 15
+    }
+    -- parse tidal code block
+    local video = 0
+    for k, value in pairs(map) do
+      if block:match(k) then
+        video = value
+      end
+    end
+    if video > 0 then
+      if video ~= playing then
+        mpv(string.format([[video "%02d.mp4" %s%%]], video, begin))
+        playing = video
+      end
+    else
+      mpv(string.format([[video "%02d.mp4" %s%%]], 1, begin))
+      mpv([[clr]])
+      playing = nil
+    end
+  end,
+  -- hook to control video speed
+  function(plugin, block)
+    -- parse tidal code # speed <n>
+    local speed = block:match("# speed (%d+%.?%d*)")
+    if not speed or tonumber(speed) < 0 then
+      speed = 1
+    end
+    speed = tonumber(speed)
+    mpv(string.format([[set speed %s]], speed))
+  end,
+  -- hook to control video shuffle from chop or gap tidal functions
+  function(plugin, block)
+    -- parse tidal code # speed <n>
+    local chop = block:match("$ chop (%d+)")
+    if not chop then
+      chop = 1
+    end
+    chop = tonumber(chop)
+    local map = {
+      [1] = "0",
+      [2] = "1 0",
+      [3] = "0 2 1",
+      [4] = "0 3 1 2",
+      [5] = "0 4 2 2 3",
+      [6] = "1 5 3 2 4 0",
+      [7] = "0 6 3 4 2 5 1",
+      [8] = "0 6 3 4 2 5 1",
+      [9] = "0 6 3 4 2 5 1 7",
+      [10] = "8 6 3 0 2 5 1 7 3",
+      [11] = "0 6 8 4 2 9 1 7 0 0",
+    }
+    vim.notify(string.format([[vf add "@chop:shuffleframes:%s"]], map[chop]))
+    mpv(string.format([[vf add "@chop:shuffleframes:%s"]], map[chop]))
+  end,
+  -- hook to control video shufflepixels from squiz tidal function
+  function(plugin, block)
+    -- parse tidal code # squiz <n>
+    local squiz = block:match("# squiz (%d+%.?%d*)")
+    if not squiz then
+      squiz = 0
+    end
+    squiz = tonumber(squiz)
+    local width = 608
+    local height = 320
+    local size = string.format("w=%s:h=%s", width, height)
+    if squiz > 0 and squiz < 0.1 then
+      size = string.format("w=%s:h=%s", width, height)
+    elseif squiz >= 0.1 and squiz < 0.2 then
+      size = string.format("w=%s:h=%s", width / 2, height / 2)
+    elseif squiz >= 0.2 and squiz < 0.3 then
+      size = string.format("w=%s:h=%s", width / 4, height / 4)
+    elseif squiz >= 0.3 and squiz < 0.4 then
+      size = string.format("w=%s:h=%s", width / 6, height / 6)
+    elseif squiz >= 0.4 and squiz < 0.5 then
+      size = string.format("w=%s:h=%s", width / 8, height / 8)
+    elseif squiz >= 0.5 and squiz < 0.6 then
+      size = string.format("w=%s:h=%s", width / 10, height / 10)
+    elseif squiz > 1 then
+      size = string.format("w=%s:h=%s", width / 20, height / 20)
+    --elseif squiz < 0.7 then
+    --  size = string.format("w=%s:h=%s", width / 7, height / 7)
+    --elseif squiz < 0.8 then
+    --  size = string.format("w=%s:h=%s", width / 8, height / 8)
+    --elseif squiz < 0.9 then
+    --  size = string.format("w=%s:h=%s", width / 9, height / 9)
+    --elseif squiz >= 0.9 then
+    --  size = string.format("w=%s:h=%s", width / 10, height / 10)
+    end
+    mpv(string.format([[vf add "@squiz:shufflepixels:mode=block:%s:seed=1"]], size))
+  end,
+})
+hooks('espeak', {
+  function(plugin, block)
+    -- map sound name to video number
+    local map = {
+      questions = 4,
+      answers = 8,
+      how = 12,
+      black = 6,
+      blue = 9,
+      red = 11,
+    }
+    -- parse tidal code block
+    local video = 0
+    for k, value in pairs(map) do
+      if block:match(k) then
+        video = value
+      end
+    end
+    if video > 0 then
+      mpv(string.format([[video "%02d.mp4"]], video))
+      if video == 4 then
+        mpv([[clear]])
+        mpv([[hue $ h 230 $ s 9]])
+      elseif video == 5 then
+        mpv([[clear]])
+        mpv([[hue $ h 10 $ s 10]])
+      elseif video == 10 then
+        mpv([[clear]])
+        mpv([[hue $ h 100 $ s 99]])
+      end
+    end
+  end,
+})
 
 length('obs', 20000)
 cycle('obs', {
@@ -50,7 +197,6 @@ mpv([[set speed 0.5]])
 
 sm([[...:.:]], 'typewrite')
 
-config.path.mpv = "${HOME}/art/videos"
 
 mpv([[video "videos-12-monkeys/04.mp4"]])
 
