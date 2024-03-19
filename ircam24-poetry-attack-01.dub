@@ -279,12 +279,6 @@ mpv([[edge $ mod canny]])
 
 mpv([[amp $ fac 2000 $ low 5000 $ thr 3000]])
 
-hooks('fudi', {
-  function()
-    vim.notify('fudi hook executed!')
-  end,
-})
-
 
 fudi([[onoff 1; vol 0.10; freq 720; wave 0; delay 1; time 500; mod 500;]])
 
@@ -460,7 +454,6 @@ d1 $ sound "bd"
 hush
 
 d1
-  $ fast 2
   $ sometimes (off 0.25 (# up "-8"))
   $ stut 3 0.5 0.5
   $ s "mocreo*2"
