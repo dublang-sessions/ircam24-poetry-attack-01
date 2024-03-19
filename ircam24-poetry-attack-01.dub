@@ -357,24 +357,28 @@ schedule({
   end,
   [11] = function()
     fudi([[onoff 1; vol 0.20; freq 260; wave 1; delay 0; time 250; mod 60;]])
+    mpv([[hue $ h 100 $ s 1]])
   end,
   [12] = function()
     fudi([[onoff 1; vol 0.20; freq 465; wave 0; delay 1; time 300; mod 50;]])
   end,
   [13] = function()
     fudi([[onoff 1; vol 0.20; freq 270; wave 1; delay 0; time 350; mod 40;]])
+    mpv([[hue $ h 100 $ s 10]])
   end,
   [14] = function()
     fudi([[onoff 1; vol 0.20; freq 75; wave 2; delay 1; time 400; mod 30;]])
   end,
   [17] = function()
     fudi([[freq 2; vol 0.25;]])
+    mpv([[hue $ h 200 $ s 100]])
   end,
   [18] = function()
     fudi([[freq 4; vol 0.30;]])
   end,
   [19] = function()
     fudi([[onoff 0;]])
+    mpv([[clr]])
   end,
   [20] = function()
     fudi([[onoff 1; freq 6; vol 0.32;]])
