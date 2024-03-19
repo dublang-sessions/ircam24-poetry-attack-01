@@ -106,6 +106,9 @@ hooks('tidalcycles', {
       local low = math.random(50)
       mpv(string.format([[amp $ fac %d $ low %d $ thr %d]], fac, low, thr))
     end
+    if block:match("superpiano") then
+      nvimqt([[noise(' - _ ')]])
+    end
   end,
   -- hook to control video shufflepixels from squiz tidal function
   --function(plugin, block)
