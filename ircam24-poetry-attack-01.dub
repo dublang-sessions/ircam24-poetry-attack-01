@@ -272,7 +272,7 @@ hooks('fudi', {
   end,
 })
 
-mpv([[colort $ tem 10 $ mix 1 $ pl 1]])
+mpv([[colort $ tem 50 $ mix 1 $ pl 1]])
 
 fudi([[onoff 1; vol 0.10; freq 720; wave 0; delay 1; time 500; mod 500;]])
 
