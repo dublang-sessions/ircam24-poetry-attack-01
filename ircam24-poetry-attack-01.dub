@@ -345,7 +345,7 @@ schedule({
   end,
 })
 
-mpv([[colort $ tem 200 $ mix 0.9 $ pl 0.9]])
+mpv([[colort $ tem 100 $ mix 0.9 $ pl 0.9]])
 
 #!dublang
 
