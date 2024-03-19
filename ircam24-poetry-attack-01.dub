@@ -338,14 +338,13 @@ schedule({
   end,
   [18] = function()
     fudi([[onoff 0;]])
-    mpv([[colort $ tem 2000 $ mix 0.9 $ pl 0.8]])
+    mpv([[colort $ tem 100 $ mix 0.99 $ pl 0.99]])
   end,
   [25] = function()
     mpv([[clr]])
   end,
 })
 
-mpv([[colort $ tem 100 $ mix 0.99 $ pl 0.99]])
 
 #!dublang
 
