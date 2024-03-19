@@ -227,7 +227,7 @@ nvimqt([[noise('    _  -')]])
 
 mpv([[hue $ h 1000 $ s 80]])
 
-mpv([[hsvh $ hue 1000]])
+mpv([[hsvh $ hue 10]])
 
 mpv([[clr]])
 
