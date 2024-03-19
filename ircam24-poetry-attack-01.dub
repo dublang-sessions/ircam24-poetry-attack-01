@@ -349,7 +349,7 @@ schedule({
   end,
 })
 
-    sm([[ircam forum workshops 2024, poetry attack 01: how many black people are here?]], 'typewrite')
+    sm([[ircam forum workshops 2024, poetry attack 01]], 'typewrite')
 
 #!dublang
 
