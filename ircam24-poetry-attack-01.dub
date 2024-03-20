@@ -457,7 +457,7 @@ return vim.env.FREQ
 
 #!tidalcycles
 
-d1 $ sound "bd" # squiz 0.8
+d1 $ sound "bd" # squiz 1.5
 
 hush
 
