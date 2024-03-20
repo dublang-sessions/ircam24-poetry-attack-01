@@ -253,7 +253,7 @@ mpv([[hue $ h 200 $ s 13]])
 
 mpv([[scroll 0.005 0.005]])
 
-mpv([[set speed 0.75]])
+mpv([[set speed 0.5]])
 
 sm([[...:.:]], 'typewrite')
 
