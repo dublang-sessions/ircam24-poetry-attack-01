@@ -557,9 +557,24 @@ d1
   # room 0.95
   # size 0.95
   # gain (slow 8 $ palindrome $ range 0.75 1 sine)
-  |+ shape 0.2
+  |+ shape 0.1
 
 xfadeIn 2 16
+  $ often (# cut 2)
+  $ rarely (superimpose ((# squiz 2) . (chop 8) . (|- gain 0.25)))
+  $ slow 8
+  $ slowcat [
+    sound "berimbau",
+    sound "berimbau-calango",
+    sound "berimbau-session",
+    sound "berimbau-slow"
+  ]
+  # n (irand 8)
+  # lpf (slow 4 $ range 400 3000 sine)
+  # speed 1 |+ speed (slow 2 $ sine * 0.5)
+  # gain (slow 6 $ palindrome $ range 0.75 1 sine)
+
+d2
   $ often (# cut 2)
   $ rarely (superimpose ((# squiz 2) . (chop 8) . (|- gain 0.25)))
   $ slow 8
