@@ -199,8 +199,9 @@ cycle('sm', {
 })
 
 
-    mpv([[hue $ h 1000 $ s 80]])
-    mpv([[hue $ h 100 $ s 200]])
+mpv([[hue $ h 1000 $ s 80]])
+
+mpv([[hue $ h 100 $ s 200]])
 
 mpv([[hue $ h 200 $ s 13]])
 
@@ -209,7 +210,6 @@ mpv([[scroll 0.001 0.001]])
 mpv([[set speed 0.5]])
 
 sm([[...:.:]], 'typewrite')
-
 
 mpv([[video "videos-12-monkeys/04.mp4"]])
 
@@ -225,7 +225,6 @@ mpv([[hue $ h 1000 $ s 80]])
 mpv([[eq $ con 6]])
 
 mpv([[clr]])
-
 
 
 length(20000)
