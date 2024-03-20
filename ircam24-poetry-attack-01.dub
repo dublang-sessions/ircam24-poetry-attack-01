@@ -681,6 +681,7 @@ d5
     note (scale "chromatic" (run 4)) # lpf 2000
   ]
   # sound "bass2"
+  # gain 0.9
 
 do
   xfadeIn 1 32 $ silence
