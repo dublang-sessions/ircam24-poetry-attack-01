@@ -772,6 +772,7 @@ d1
 
 d2
   $ off 0.25 (# up "-8")
+  $ slow 2
   $ note "c"
   # sound "supersiren"
   # gain 0.4
