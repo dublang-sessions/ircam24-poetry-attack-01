@@ -520,6 +520,7 @@ d1
   |+ shape 0.1
 
 d2
+  $ often (# cut 2)
   $ rarely (superimpose ((# squiz 2) . (chop 8) . (|- gain 0.25)))
   $ slow 8
   $ slowcat [
