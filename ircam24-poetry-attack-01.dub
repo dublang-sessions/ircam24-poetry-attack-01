@@ -1,3 +1,7 @@
+#!tidalcycles
+
+d1 $ sound "cp"
+
 #!dublang
 
 mpv([[video "videos-pastinha/1950/16.mp4" 5%]])
@@ -779,3 +783,7 @@ close /home/joenio/art/sounds/synths-puredata/oscillator/sawtooth.pd
 #!sm
 
 thank you
+
+#!obs
+
+scene.set thanks
