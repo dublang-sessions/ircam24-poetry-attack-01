@@ -752,6 +752,21 @@ do
   xfadeIn 8 32 $ silence
   xfadeIn 9 32 $ silence
 
+
+xfadeIn 1 4
+  $ slowcat [
+    sound "cp",
+    sound "bd*2",
+    sound "jazz:7(3,8)",
+    sound "cp",
+    sound "hh27" # n (irand 8),
+    sound "cp"
+  ]
+  # speed 1
+  # squiz 0
+  # gain 0.4
+  |+ gain (slow 4 $ sine * 0.2)
+
 #!espeak
 
 In another hundred and twenty days the building of the Integral will be completed.
