@@ -779,6 +779,12 @@ d2
   # gain 0.4
   |- gain (slow 4 $ sine * 0.2)
 
+do
+  xfadeIn 1 32 $ silence
+  xfadeIn 2 32 $ silence
+  xfadeIn 3 32 $ silence
+  xfadeIn 4 32 $ silence
+
 #!espeak
 
 In another hundred and twenty days the building of the Integral will be completed.
