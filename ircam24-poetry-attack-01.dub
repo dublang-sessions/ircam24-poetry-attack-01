@@ -546,7 +546,7 @@ xfadeIn 1 8
 
 d1
   $ rarely (# cut 1)
-  $ sometimes (stut 8 0.5 0.25)
+  $ sometimes (stut 4 0.75 0.25)
   $ often (# vowel "[a|u|i]")
   $ stack [
     degrade $ sound "pandeiro*4",
