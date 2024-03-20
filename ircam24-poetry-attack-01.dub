@@ -669,6 +669,8 @@ d4
   # pan "[0|1]"
   |- gain (rand * 0.2)
 
+once $ sound "supersiren"
+
 d5
   $ off "0.25" ((|+ up "[8|-8]") . (|- gain 0.2))
   $ degradeBy 0.8
