@@ -551,7 +551,7 @@ d1
   $ sound "pandeiro(5,8)"
   # n (irand 5)
   # orbit 1
-  # room 0.75
+  # room 0.95
   # size 0.75
   # gain (slow 8 $ palindrome $ range 0.75 1 sine)
   |+ shape 0.1
