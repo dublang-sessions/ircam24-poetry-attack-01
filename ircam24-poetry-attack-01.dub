@@ -585,6 +585,8 @@ d1
     sound "~ pandeiro:4*2"
   ]
   # vowel "o" # gain 1.2
+  # speed 1
+  |- speed (slow 4 $ sine * 0.2)
 
 
 xfadeIn 2 16 $ silence
