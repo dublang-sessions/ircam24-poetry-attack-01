@@ -770,7 +770,7 @@ d1
   # pan "[0|1]"
 
 d2
-  # note "c"
+  $ note "c"
   # sound "supersiren"
   # gain 0.8
 
