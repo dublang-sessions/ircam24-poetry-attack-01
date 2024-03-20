@@ -772,7 +772,7 @@ d1
 d2
   $ note "c"
   # sound "supersiren"
-  # gain 0.8
+  # gain 0.4
 
 #!espeak
 
