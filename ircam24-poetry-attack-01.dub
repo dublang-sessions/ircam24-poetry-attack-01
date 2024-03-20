@@ -755,6 +755,7 @@ do
 
 d1
   $ stut 2 0.5 0.25
+  $ fast 2
   $ slowcat [
     sound "cp",
     sound "bd*2",
