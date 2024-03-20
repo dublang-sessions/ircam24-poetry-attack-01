@@ -767,6 +767,7 @@ d1
   # squiz 0
   # gain 0.4
   |+ gain (slow 4 $ sine * 0.2)
+  # pan "[0|1]"
 
 #!espeak
 
