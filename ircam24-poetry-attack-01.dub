@@ -3,6 +3,7 @@
 d1 $ sound "cp"
 
 #!espeak
+
 |repeat 5
 
 how many black people?
