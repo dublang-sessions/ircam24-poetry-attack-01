@@ -274,6 +274,8 @@ mpv([[clr]])
 
 mpv([[edge $ mod canny]])
 
+mpv([[edge $ mod wires]])
+
 mpv([[amp $ fac 20 $ low 500 $ thr 300]])
 
 schedule({
