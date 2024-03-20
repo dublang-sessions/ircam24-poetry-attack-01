@@ -318,6 +318,8 @@ schedule({
   end,
 })
 
+    fudi([[onoff 0;]])
+
 schedule({
   [1] = function()
     fudi([[onoff 1; vol 0.15; freq 720; wave 0; delay 0; time 500; mod 500;]])
