@@ -588,7 +588,7 @@ d1
   # vowel "o" # gain 1.2
   # speed 1
   |- speed (palindrome $ slow 4 $ sine * 0.2)
-  # squiz 0.5
+  # squiz 0.9
 
 
 xfadeIn 2 16 $ silence
