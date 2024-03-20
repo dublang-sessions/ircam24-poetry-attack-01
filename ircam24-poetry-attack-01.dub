@@ -4,6 +4,8 @@ d1 $ sound "cp"
 
 #!dublang
 
+espeak([[test]])
+
 mpv([[video "videos-pastinha/1950/01.mp4" 5%]])
 
 mpv([[video "videos-pastinha/1950/16.mp4" 5%]])
