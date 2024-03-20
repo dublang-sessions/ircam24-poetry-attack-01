@@ -574,6 +574,8 @@ xfadeIn 2 16
   # speed 1 |+ speed (slow 2 $ sine * 0.5)
   # gain (slow 6 $ palindrome $ range 0.75 1 sine)
 
+xfadeIn 1 32 $ silence
+
 d2
   $ often (# cut 2)
   $ rarely (superimpose ((# squiz 2) . (chop 8) . (|- gain 0.25)))
