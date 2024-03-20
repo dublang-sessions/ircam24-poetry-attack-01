@@ -753,7 +753,8 @@ do
   xfadeIn 9 32 $ silence
 
 
-xfadeIn 1 4
+d1
+  $ stut 2 0.5 0.25
   $ slowcat [
     sound "cp",
     sound "bd*2",
