@@ -494,6 +494,8 @@ return vim.env.FREQ
 
 #!tidalcycles
 
+hush
+
 d1
   $ sound "[jazz:7(3,8), cp*2, ~ bd*4]"
   # begin 0.2 # squiz 0
