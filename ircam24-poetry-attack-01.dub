@@ -577,6 +577,7 @@ d2
   # gain (slow 6 $ palindrome $ range 0.75 1 sine)
 
 d1
+  $ off 0.125 (chop 2)
   $ stack [
     sound "pandeiro:1",
     sound "~ pandeiro:2",
