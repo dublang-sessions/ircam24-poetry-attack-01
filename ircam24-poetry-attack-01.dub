@@ -528,18 +528,13 @@ d1
   $ stut 3 0.5 0.5
   $ s "mocreo*2"
   # n (irand 8)
-  # gain 0.9 # shape 0
-  # squiz 1.2
+  # gain 0.9 # shape 0.1
+  # squiz 1
 
 xfadeIn 1 32 $ silence
 
-d1 $ sound "hoover*2" # n (irand 8)
 
-  # squiz 2.5 # cut 1
-
-hush
-
-d1
+xfadeIn 1 8
   $ sometimes (stut 8 0.5 0.25)
   $ often (# vowel "[a|u|i]")
   $ sound "pandeiro(5,8)"
