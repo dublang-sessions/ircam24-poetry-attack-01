@@ -685,11 +685,12 @@ d5
   # gain 0.9
 
 do
-  xfadeIn 1 32 $ silence
-  xfadeIn 2 32 $ silence
-  xfadeIn 3 32 $ silence
-  xfadeIn 4 32 $ silence
-  xfadeIn 5 32 $ silence
+  xfadeIn 1 64 $ silence
+  xfadeIn 2 64 $ silence
+  xfadeIn 3 64 $ silence
+  xfadeIn 4 64 $ silence
+  xfadeIn 5 64 $ silence
+  xfadeIn 6 64 $ silence
 
 -- T20: silence
 
