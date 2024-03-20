@@ -767,7 +767,7 @@ d1
   ]
   # speed 1
   # squiz 0
-  # gain 0.5
+  # gain 0.7
   |+ gain (slow 4 $ sine * 0.2)
   # pan "[0|1]"
 
