@@ -757,7 +757,7 @@ d1
   $ stut 2 0.5 0.25
   $ fast 2
   $ slowcat [
-    sound "cp",
+    sound "[cp, arpy*2]" # speed 0.95,
     sound "bd*2",
     sound "jazz:7(3,8)",
     sound "cp",
