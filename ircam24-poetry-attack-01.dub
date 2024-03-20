@@ -121,11 +121,11 @@ hooks('tidalcycles', {
       squiz = 0
     end
     squiz = tonumber(squiz)
-    if squiz > 0 and squiz < 0.5 then
+    if squiz > 1 and squiz < 1.5 then
       mpv([[edge $ mod colormix]])
-    elseif squiz >= 0.5 and squiz < 1.5 then
+    elseif squiz >= 1.5 and squiz < 2.5 then
       mpv([[edge $ mod wires]])
-    elseif squiz >= 1.5 and squiz < 3 then
+    elseif squiz >= 2.5 then
       mpv([[edge $ mod canny]])
     end
   end,
