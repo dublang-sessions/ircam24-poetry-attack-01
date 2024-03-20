@@ -3,6 +3,7 @@
 d1 $ sound "cp"
 
 #!dublang
+|repeat 2
 
 espeak([[test]])
 
