@@ -670,6 +670,7 @@ d4
   |- gain (rand * 0.2)
 
 once $ sound "supersiren"
+# gain 1.2
 
 d5
   $ off "0.25" ((|+ up "[8|-8]") . (|- gain 0.2))
