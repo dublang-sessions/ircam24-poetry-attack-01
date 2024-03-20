@@ -559,7 +559,7 @@ d1
   # gain (slow 8 $ palindrome $ range 0.75 1 sine)
   |+ shape 0.2
 
-d2
+xfadeIn 2 16
   $ often (# cut 2)
   $ rarely (superimpose ((# squiz 2) . (chop 8) . (|- gain 0.25)))
   $ slow 8
