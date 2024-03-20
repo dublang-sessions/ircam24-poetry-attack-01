@@ -488,7 +488,7 @@ d1
   $ chop 6
   $ sound "[jazz:7(3,8), cp*2, ~ bd*4]"
   # squiz 2.5
-  # begin 0.05 # speed 3
+  # begin 0.05 # speed 1
 
 hush
 
