@@ -2,6 +2,11 @@
 
 d1 $ sound "cp"
 
+#!espeak
+
+how?
+
+
 #!dublang
 
 mpv([[video "videos-12-monkeys/01.mp4"]])
