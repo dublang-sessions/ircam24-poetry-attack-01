@@ -486,7 +486,6 @@ return vim.env.FREQ
 
 d1
   $ sound "[jazz:7(3,8), cp*2, ~ bd*4]"
-  # speed 1
 
 hush
 
