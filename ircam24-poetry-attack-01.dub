@@ -769,6 +769,10 @@ d1
   |+ gain (slow 4 $ sine * 0.2)
   # pan "[0|1]"
 
+d2
+  $ sound "supersiren"
+  # gain 0.8
+
 #!espeak
 
 In another hundred and twenty days the building of the Integral will be completed.
