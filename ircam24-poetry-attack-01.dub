@@ -459,7 +459,7 @@ return vim.env.FREQ
 
 d1
   $ chop 4
-  $ sound "jazz cp" # squiz 2.5
+  $ sound "jazz?7 cp" # squiz 2.5
   # begin 0.05 # speed 3
 
 hush
