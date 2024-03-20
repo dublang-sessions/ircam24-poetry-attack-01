@@ -267,18 +267,22 @@ cycle({})
 schedule({
   [1] = function()
     espeak([[question?]])
+    sm([[question?]])
     mpv([[pixels $ mod block $ wid 200 $ hei 200 $ seed 1]])
   end,
   [5] = function()
     espeak([[how many?]])
+    sm([[how many?]])
     mpv([[pixels $ mod block $ wid 100 $ hei 100 $ seed 1]])
   end,
   [10] = function()
     espeak([[black people?]])
+    sm([[black people?]])
     mpv([[pixels $ mod block $ wid 50 $ hei 50 $ seed 1]])
   end,
   [15] = function()
     espeak([[are here?]])
+    sm([[are here?]])
     mpv([[pixels $ mod block $ wid 25 $ hei 25 $ seed 1]])
   end,
   [20] = function()
