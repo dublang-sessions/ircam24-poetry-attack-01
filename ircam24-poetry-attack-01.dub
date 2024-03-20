@@ -457,7 +457,9 @@ return vim.env.FREQ
 
 #!tidalcycles
 
-d1 $ sound "jazz cp" # squiz 2.5
+d1
+  $ chop 4
+  $ sound "jazz cp" # squiz 2.5
   # begin 0.05 # speed 3
 
 hush
