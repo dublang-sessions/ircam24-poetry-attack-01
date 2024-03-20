@@ -586,7 +586,7 @@ d1
   ]
   # vowel "o" # gain 1.2
   # speed 1
-  |- speed (slow 4 $ sine * 0.2)
+  |- speed (palindrome $ slow 4 $ sine * 0.2)
 
 
 xfadeIn 2 16 $ silence
