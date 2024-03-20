@@ -557,7 +557,7 @@ d1
   # room 0.95
   # size 0.95
   # gain (slow 8 $ palindrome $ range 0.75 1 sine)
-  |+ shape 0.1
+  |- shape 0.1
 
 xfadeIn 2 16
   $ often (# cut 2)
