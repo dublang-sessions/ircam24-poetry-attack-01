@@ -528,7 +528,7 @@ d1
   $ stut 3 0.5 0.5
   $ s "mocreo*2"
   # n (irand 8)
-  # gain 0.7 # shape 0
+  # gain 0.9 # shape 0
   # squiz 1.2
 
 xfadeIn 1 32 $ silence
