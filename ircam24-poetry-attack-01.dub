@@ -674,6 +674,7 @@ xfadeIn 4 16 $ silence
 xfadeIn 4 16 $ silence
 
 d5
+  $ chop 2
   $ off "0.25" ((|+ up "[8|-8]") . (|- gain 0.2))
   $ degradeBy 0.8
   $ stack [
