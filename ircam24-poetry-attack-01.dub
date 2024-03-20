@@ -777,6 +777,7 @@ d2
   $ note "c"
   # sound "supersiren"
   # gain 0.4
+  |- gain (sine * 0.2)
 
 #!espeak
 
