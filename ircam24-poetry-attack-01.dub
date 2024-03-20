@@ -241,7 +241,7 @@ nvimqt([[fill(' -')]])
 
 mpv([[hue $ h 1000 $ s 80]])
 
-mpv([[eq $ con 60]])
+mpv([[eq $ con 10]])
 
 mpv([[clr]])
 
