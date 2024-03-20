@@ -15,7 +15,7 @@ supercollider([[~dirt.loadSoundFiles("${config.path.sounds}/sounds-berimbau/*")]
 supercollider([[~dirt.loadSoundFiles("${config.path.sounds}/sounds-pandeiro/*")]])
 supercollider([[~dirt.loadSoundFiles("${config.path.sounds}/sounds-mocreo/*")]])
 mpv([[clr]])
-dirs = { "videos-12-monkeys", "videos-pastinha/1950", "videos-pastinha/1963" }
+dirs = { "videos-12-monkeys", "videos-pastinha/1950", "videos-pastinha/1963", "videos-pastinha/1950", "videos-pastinha/1963" }
 scenes = { "s1", "s2", "s3" }
 hooks('tidalcycles', {
   -- hook function for tidalcycles
