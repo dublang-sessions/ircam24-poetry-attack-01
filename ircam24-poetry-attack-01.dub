@@ -1,26 +1,22 @@
 #!dublang
 
+mpv([[video "videos-pastinha/1950/16.mp4" 5%]])
+
+mpv([[video "videos-pastinha/1963/16.mp4"]])
+
+return dirs[math.random(#dirs)]
+
+return scenes[math.random(#scenes)]
+
 -- videos $n = 01 .. 16
 
 config.path.mpv = "${HOME}/art/videos"
 supercollider([[~dirt.loadSoundFiles("${config.path.sounds}/sounds-berimbau/*")]])
 supercollider([[~dirt.loadSoundFiles("${config.path.sounds}/sounds-pandeiro/*")]])
 supercollider([[~dirt.loadSoundFiles("${config.path.sounds}/sounds-mocreo/*")]])
-
-mpv([[video "videos-pastinha/1950/16.mp4" 5%]])
-
-mpv([[video "videos-pastinha/1963/16.mp4"]])
-
 mpv([[clr]])
-
-
 dirs = { "videos-12-monkeys", "videos-pastinha/1950", "videos-pastinha/1963" }
 scenes = { "s1", "s2", "s3" }
-
-return dirs[math.random(#dirs)]
-
-return scenes[math.random(#scenes)]
-
 hooks('tidalcycles', {
   -- hook function for tidalcycles
   -- hook to control video playback
