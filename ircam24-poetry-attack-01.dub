@@ -580,7 +580,7 @@ d1
   $ stack [
     sound "pandeiro:1",
     sound "~ pandeiro:2",
-    sound "~ pandeiro:3(3,8)"
+    sound "~ pandeiro:3(1,8)"
   ]
 
 
