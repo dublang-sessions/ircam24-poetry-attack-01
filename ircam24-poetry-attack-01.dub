@@ -113,6 +113,22 @@ hooks('tidalcycles', {
       nvimqt([[fill(' - _ ')]])
     end
   end,
+  -- hook to control video edge from squiz tidal function
+  function(plugin, block)
+    -- parse tidal code # squiz <n>
+    local squiz = block:match("# squiz (%d+%.?%d*)")
+    if not squiz then
+      squiz = 0
+    end
+    squiz = tonumber(squiz)
+    if squiz > 0 and squiz < 0.5 then
+      mpv([[edge $ mod colormix]])
+    elseif squiz >= 0.5 and squiz < 1.5 then
+      mpv([[edge $ mod wires]])
+    elseif squiz >= 1.5 and squiz < 3 then
+      mpv([[edge $ mod canny]])
+    end
+  end,
   -- hook to control video shufflepixels from squiz tidal function
   --function(plugin, block)
   --  -- parse tidal code # squiz <n>
@@ -271,12 +287,6 @@ schedule({
 })
 
 mpv([[clr]])
-
-mpv([[edge $ mod canny]])
-
-mpv([[edge $ mod wires]])
-
-mpv([[edge $ mod colormix]])
 
 mpv([[amp $ fac 20 $ low 500 $ thr 300]])
 
