@@ -544,6 +544,18 @@ xfadeIn 1 8
   # gain (slow 8 $ palindrome $ range 0.75 1 sine)
   |+ shape 0.1
 
+d1
+  $ rarely (# cut 1)
+  $ sometimes (stut 8 0.5 0.25)
+  $ often (# vowel "[a|u|i]")
+  $ sound "pandeiro(5,8)"
+  # n (irand 5)
+  # orbit 1
+  # room 0.75
+  # size 0.75
+  # gain (slow 8 $ palindrome $ range 0.75 1 sine)
+  |+ shape 0.1
+
 d2
   $ often (# cut 2)
   $ rarely (superimpose ((# squiz 2) . (chop 8) . (|- gain 0.25)))
