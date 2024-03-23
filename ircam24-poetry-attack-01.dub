@@ -512,6 +512,7 @@ schedule({
   [17] = function()
     fudi([[freq 2; vol 0.20;]])
     mpv([[hue $ h 200 $ s 100]])
+    mpv([[pixels $ mod block $ wid 6 $ hei 6 $ seed 1]])
   end,
   [18] = function()
     fudi([[freq 4; vol 0.25;]])
