@@ -557,7 +557,8 @@ return vim.env.FREQ
 
 hush
 
-d1
+d1 $ silence
+
   $ sound "[jazz:7(3,8), cp*2, ~ bd*4]"
   # begin 0.2 # squiz 0
 
