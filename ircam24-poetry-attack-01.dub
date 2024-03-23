@@ -581,7 +581,7 @@ hush
 
 hush
 
-d1
+d2
   $ sometimes (off 0.25 (# up "[-8|8]"))
   $ stut 4 0.5 0.5
   $ s "mocreo(3,8)"
