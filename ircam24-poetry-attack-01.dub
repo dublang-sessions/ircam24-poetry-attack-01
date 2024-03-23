@@ -448,6 +448,7 @@ schedule({
   end,
   [30] = function()
     mpv([[clr]])
+    nvimqt([[fill("  ..*-=+")]])
     sm([[how many black people are here?]], 'typewrite')
   end,
 })
