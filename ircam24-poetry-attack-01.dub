@@ -563,7 +563,7 @@ xfadeIn 2 8
   # gain (slow 8 $ palindrome $ range 0.75 1 sine)
   |- shape 0.1
 
-xfadeIn 1 16 $ silence
+xfadeIn 2 32 $ silence
 
 xfadeIn 3 16
   $ often (# cut 2)
