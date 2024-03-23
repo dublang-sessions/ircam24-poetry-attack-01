@@ -230,6 +230,23 @@ hooks('espeak', {
   end,
 })
 
+hooks('supercollider', {
+  function(plugin, block)
+    local directions = {'left', 'right', 'up', 'down'}
+    local dir = directions[math.random(#directions)]
+    if dir == 'left' then
+      mpv([[scroll 0]])
+    elseif dir == 'right' then
+      mpv([[hue $ h 10 $ s 10]])
+    elseif dir == 'up' then
+      mpv([[hue $ h 100 $ s 99]])
+    elseif dir == 'down' then
+    end
+  end,
+})
+
+
+mpv([[scroll ]])
 
 mpv([[clear]])
 
@@ -250,7 +267,7 @@ mpv([[hue $ h 100 $ s 200]])
 
 mpv([[hue $ h 200 $ s 13]])
 
-mpv([[scroll 0.005 0.005]])
+mpv([[scroll 0.005 0]])
 
 mpv([[set speed 0.5]])
 
