@@ -396,6 +396,7 @@ fudi([[onoff 0;]])
 schedule({
   [1] = function()
     fudi([[onoff 1; vol 0.1; freq 720; wave 0; delay 0; time 500; mod 500;]])
+    nvimqt([[noise("  ..*-=+")]])
     mpv([[colort $ tem 1000 $ mix 0.4 $ pl 0.5]])
     sm([[____...-....-....-...------]], 'typewrite')
   end,
