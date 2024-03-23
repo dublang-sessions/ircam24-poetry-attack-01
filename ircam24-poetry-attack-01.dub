@@ -216,7 +216,7 @@ hooks('tidalcycles', {
 })
 
 
-mpv([[video "videos-12-monkeys/06.mp4"]])
+mpv([[video "videos-12-monkeys/07.mp4"]])
 
 hooks('espeak', {
   function(plugin, block)
@@ -224,8 +224,8 @@ hooks('espeak', {
     local map = {
       how = 5,
       questions = 4,
+      answers = 6,
 
-      answers = 14,
       black = 13,
       blue = 12,
       red = 11,
