@@ -31,7 +31,7 @@ mpv([[video "videos-pastinha/1950/01.mp4" 5%]])
 
 mpv([[video "videos-pastinha/1950/16.mp4" 5%]])
 
-mpv([[video "videos-pastinha/1963/16.mp4"]])
+mpv([[video "videos-pastinha/1963/10.mp4"]])
 
 return dirs[math.random(#dirs)]
 
