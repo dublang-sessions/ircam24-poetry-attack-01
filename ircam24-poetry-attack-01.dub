@@ -597,7 +597,7 @@ xfadeIn 1 32
 
 xfadeIn 2 16 $ silence
 
-d2
+d3
   $ often (# cut 2)
   $ rarely (superimpose ((# squiz 2) . (chop 8) . (|- gain 0.25)))
   $ slow 8
