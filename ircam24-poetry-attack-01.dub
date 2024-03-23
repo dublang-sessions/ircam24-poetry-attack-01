@@ -214,10 +214,6 @@ hooks('tidalcycles', {
   --  mpv(string.format([[vf add "@squiz:shufflepixels:mode=block:%s:seed=1"]], size))
   --end,
 })
-
-
-mpv([[video "videos-12-monkeys/43.mp4"]])
-
 hooks('espeak', {
   function(plugin, block)
     -- map sound name to video number
@@ -231,8 +227,7 @@ hooks('espeak', {
       people = 28,
       many = 35,
       poetry = 37,
-
-      attack = 7,
+      attack = 43,
     }
     -- parse espeak code block
     local video = 0
@@ -256,7 +251,6 @@ hooks('espeak', {
     end
   end,
 })
-
 hooks('supercollider', {
   function(plugin, block)
     local directions = {'left', 'right', 'up', 'down'}
