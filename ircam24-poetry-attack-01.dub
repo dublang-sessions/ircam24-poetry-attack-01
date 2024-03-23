@@ -27,7 +27,7 @@ espeak([[test]])
 
 mpv([[clear]])
 
-mpv([[curves $ pre vintage]])
+mpv([[curves $ pre cross_process]])
 
 mpv([[video "videos-pastinha/1950/01.mp4" 5%]])
 
