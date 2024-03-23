@@ -206,6 +206,10 @@ hooks('espeak', {
       black = 13,
       blue = 12,
       red = 11,
+      people = 10,
+      many = 9,
+      poetry = 8,
+      attack = 7,
     }
     -- parse espeak code block
     local video = 0
@@ -215,7 +219,7 @@ hooks('espeak', {
       end
     end
     if video > 0 then
-      mpv(string.format([[video "%02d.mp4"]], video))
+      mpv(string.format([[video "videos-12-monkeys/%02d.mp4"]], video))
       if video == 4 then
         mpv([[clear]])
         mpv([[hue $ h 230 $ s 9]])
