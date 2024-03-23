@@ -672,7 +672,7 @@ xfadeIn 4 32
   ]
   # shape 0.2
 
-d3
+d4
   $ sometimes (# pan "[0|1]")
   $ stack [
     slowcat [
