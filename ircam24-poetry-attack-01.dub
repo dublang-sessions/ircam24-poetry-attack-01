@@ -115,8 +115,7 @@ hooks('tidalcycles', {
     else
       obs(string.format([[scene.set %s]], scenes[math.random(#scenes)]))
       mpv([[clr]])
-      mpv(string.format([[video "%s/%02d.mp4" %s%%]], dirs[math.random(#dirs)], 16, begin))
-      vim.notify(string.format([[video "%s/%02d.mp4" %s%%]], dirs[math.random(#dirs)], 16, begin))
+      mpv(string.format([[video "%s/%02d.mp4" %s%%]], dirs[math.random(#dirs)], 6, begin))
       playing = nil
     end
   end,
