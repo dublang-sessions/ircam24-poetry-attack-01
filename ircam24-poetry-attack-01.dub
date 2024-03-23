@@ -761,6 +761,8 @@ d7
   # sound "[superpiano, supersiren?]"
   # attack 0.2 # sustain 1 # release 0.5
 
+d7 $ silence
+
 do
   xfadeIn 6 32 $ silence
   xfadeIn 7 32 $ silence
