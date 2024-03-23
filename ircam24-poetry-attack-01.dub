@@ -669,7 +669,7 @@ d4
   # pan "[0|1]"
   |- gain (rand * 0.2)
 
-xfadeIn 4 16 $ silence
+xfadeIn 3 16 $ silence
 
 xfadeIn 4 16 $ silence
 
