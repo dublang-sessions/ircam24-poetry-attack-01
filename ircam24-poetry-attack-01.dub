@@ -27,6 +27,8 @@ espeak([[test]])
 
 mpv([[clear]])
 
+mpv([[curves $ pre negative]])
+
 mpv([[video "videos-pastinha/1950/01.mp4" 5%]])
 
 mpv([[video "videos-pastinha/1950/16.mp4" 5%]])
