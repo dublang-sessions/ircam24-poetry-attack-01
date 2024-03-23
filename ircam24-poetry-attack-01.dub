@@ -239,10 +239,12 @@ hooks('supercollider', {
       mpv([[vf add "@scroll:scroll:v=0:h=0.005"]])
     elseif dir == 'right' then
       --mpv([[scroll 0 -0.005]])
-      mpv([[vf add "@scroll:scroll:v=0:h=-0.05"]])
+      mpv([[vf add "@scroll:scroll:v=0:h=-0.005"]])
     elseif dir == 'up' then
-      mpv([[hue $ h 100 $ s 99]])
+      --mpv([[hue $ h 100 $ s 99]])
+      mpv([[vf add "@scroll:scroll:v=0.005:h=0"]])
     elseif dir == 'down' then
+      mpv([[vf add "@scroll:scroll:v=-0.005:h=0"]])
     end
   end,
 })
