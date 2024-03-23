@@ -267,7 +267,7 @@ mpv([[hue $ h 100 $ s 200]])
 
 mpv([[hue $ h 200 $ s 13]])
 
-mpv([[scroll 0.005 0]])
+mpv([[scroll 0 0.005]])
 
 mpv([[set speed 0.5]])
 
