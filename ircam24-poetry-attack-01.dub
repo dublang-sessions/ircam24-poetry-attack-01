@@ -271,6 +271,7 @@ mpv([[eq $ con 60]])
 
 mpv([[clr]])
 
+cycle({})
 
 length(20000)
 cycle({
