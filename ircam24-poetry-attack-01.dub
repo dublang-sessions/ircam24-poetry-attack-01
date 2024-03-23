@@ -215,13 +215,17 @@ hooks('tidalcycles', {
   --end,
 })
 
+
+mpv([[video "videos-12-monkeys/05.mp4"]])
+
 hooks('espeak', {
   function(plugin, block)
     -- map sound name to video number
     local map = {
+      how = 5,
+
       questions = 16,
       answers = 14,
-      how = 15,
       black = 13,
       blue = 12,
       red = 11,
