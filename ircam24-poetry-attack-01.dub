@@ -548,7 +548,7 @@ xfadeIn 2 8
   # gain (slow 8 $ palindrome $ range 0.75 1 sine)
   |+ shape 0.1
 
-d1
+xfadeIn 2 8
   $ rarely (# cut 1)
   $ sometimes (stut 4 0.75 0.25)
   $ often (# vowel "[a|u|i]")
