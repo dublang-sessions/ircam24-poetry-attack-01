@@ -267,15 +267,15 @@ hooks('supercollider', {
     local dir = directions[math.random(#directions)]
     if dir == 'left' then
       --mpv([[scroll 0 0.005]])
-      mpv([[vf add "@scroll:scroll:v=0:h=0.01"]])
+      mpv([[vf add "@scroll:scroll:v=0:h=0.02"]])
     elseif dir == 'right' then
       --mpv([[scroll 0 -0.005]])
-      mpv([[vf add "@scroll:scroll:v=0:h=-0.01"]])
+      mpv([[vf add "@scroll:scroll:v=0:h=-0.02"]])
     elseif dir == 'up' then
       --mpv([[hue $ h 100 $ s 99]])
-      mpv([[vf add "@scroll:scroll:v=0.01:h=0"]])
+      mpv([[vf add "@scroll:scroll:v=0.02:h=0"]])
     elseif dir == 'down' then
-      mpv([[vf add "@scroll:scroll:v=-0.01:h=0"]])
+      mpv([[vf add "@scroll:scroll:v=-0.02:h=0"]])
     end
   end,
 })
