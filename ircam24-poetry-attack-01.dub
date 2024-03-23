@@ -233,16 +233,13 @@ hooks('espeak', {
 
 mpv([[clear]])
 
-length('sm', 9000)
+length('sm', 10000)
 cycle('sm', {
   function()
-    sm([[Poetry]])
+    sm([[how many?]])
   end,
   function()
-    sm([[Attack]])
-  end,
-  function()
-    sm([[01]])
+    sm([[black people?]])
   end,
 })
 
