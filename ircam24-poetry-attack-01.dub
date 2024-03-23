@@ -216,7 +216,7 @@ hooks('tidalcycles', {
 })
 
 
-mpv([[video "videos-12-monkeys/35.mp4"]])
+mpv([[video "videos-12-monkeys/36.mp4"]])
 
 hooks('espeak', {
   function(plugin, block)
@@ -229,8 +229,8 @@ hooks('espeak', {
       blue = 21,
       red = 24,
       people = 28,
+      many = 35,
 
-      many = 9,
       poetry = 8,
       attack = 7,
     }
