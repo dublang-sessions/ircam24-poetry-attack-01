@@ -537,7 +537,7 @@ xfadeIn 1 4
 
 xfadeIn 1 32 $ silence
 
-xfadeIn 1 8
+xfadeIn 2 8
   $ sometimes (stut 8 0.5 0.25)
   $ often (# vowel "[a|u|i]")
   $ sound "pandeiro(5,8)"
