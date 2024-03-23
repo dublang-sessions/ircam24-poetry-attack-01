@@ -86,9 +86,9 @@ hooks('tidalcycles', {
     end
     local begin = begin * 100
     -- map sound name to video number
+    -- mocreo = 4,
     local map = {
       bd = 2,
-      mocreo = 4,
       bass2 = 6,
       superpiano = 8,
       supersiren = 9,
