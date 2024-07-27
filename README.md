@@ -1,4 +1,4 @@
-# dublang session for ircam forum 2025
+# dublang session for ircam forum 2024
 
 https://forum.ircam.fr/article/detail/poetry-attack-01
 
